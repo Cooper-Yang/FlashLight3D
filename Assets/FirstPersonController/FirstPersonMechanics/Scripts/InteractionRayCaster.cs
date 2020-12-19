@@ -31,6 +31,7 @@ public class InteractionRayCaster : CameraRaycaster {
         {
             if(onNoTarget != null) onNoTarget();
         }
+        
     }
 
     // we want a nullable return type

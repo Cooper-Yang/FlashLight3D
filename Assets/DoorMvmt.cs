@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class DoorMvmt : MonoBehaviour
 {
+    public Animator DoorAnim;
+
+    public bool isOpen = false;
+    public int doorState = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +18,18 @@ public class DoorMvmt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(isOpen == false)
+        {
+            DoorAnim.SetBool("Open", false);
+        }
+        if (isOpen == true)
+        {
+            DoorAnim.SetBool("Open", true);
+        }
+
+        DoorAnim.SetInteger("OpenState", doorState);
+
     }
+
+    
 }

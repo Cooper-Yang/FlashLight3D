@@ -19,10 +19,14 @@ public class Crosshair : MonoBehaviour {
     [SerializeField] private Sprite pickUp;
     [SerializeField] private Sprite note;
     [SerializeField] private Sprite crosshair;
+
     //crossHair image
     private Image img;
     public CrosshairSize crosshairSize = new CrosshairSize();
     [SerializeField] private InteractionRayCaster _raycaster;
+
+    [SerializeField] private GameObject Door;
+    [SerializeField] private GameObject Player;
 
     // Use this for initialization
     void Start () {
@@ -31,8 +35,10 @@ public class Crosshair : MonoBehaviour {
         _raycaster.onTargetChange += ChangeCrosshair;
         _raycaster.onNoTarget += ChangeCrosshair;
 
-        img = gameObject.GetComponent<Image>();        
+        img = gameObject.GetComponent<Image>();
+        
     }
+
 
     private void OnDisable()
     {
@@ -54,6 +60,10 @@ public class Crosshair : MonoBehaviour {
                     SetIcon(note);
                     SetSize(crosshairSize.medium);
                     break;
+                case "Door":
+                    SetIcon(note);
+                    DoorOpenClose();
+                    break;
                 default:
                     SetIcon(crosshair);
                     SetSize(crosshairSize.small);
@@ -66,6 +76,46 @@ public class Crosshair : MonoBehaviour {
             SetSize(crosshairSize.small);
             return;
         }
+    }
+
+
+    void DoorOpenClose()
+    {
+        Debug.Log(_raycaster.Hit.collider.name);
+        if (_raycaster.Hit.collider.name == "OutCollider")
+        {
+            if(Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                
+                if (Door.GetComponent<DoorMvmt>().isOpen)
+                {
+                    Door.GetComponent<DoorMvmt>().isOpen = false;
+                }
+                else if (Door.GetComponent<DoorMvmt>().isOpen == false)
+                {
+                    Door.GetComponent<DoorMvmt>().doorState = 2;
+                    Door.GetComponent<DoorMvmt>().isOpen = true;
+                }
+            }
+        }
+        if (_raycaster.Hit.collider.name == "InCollider")
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+               
+                if (Door.GetComponent<DoorMvmt>().isOpen)
+                {
+                    Door.GetComponent<DoorMvmt>().isOpen = false;
+                }
+                else if (Door.GetComponent<DoorMvmt>().isOpen == false)
+                {
+                    Door.GetComponent<DoorMvmt>().doorState = 1;
+                    Door.GetComponent<DoorMvmt>().isOpen = true;
+                }
+            }
+        }
+
+
     }
 
     void SetIcon(Sprite icon)
