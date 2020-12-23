@@ -52,18 +52,39 @@ public class Crosshair : MonoBehaviour {
         {
             switch (_raycaster.Hit.collider.tag)
             {
-                case "pickUp":
+                case "Key":
+                    Debug.Log("got key");
                     SetIcon(pickUp);
                     SetSize(crosshairSize.medium);
+                    if(Input.GetKey(KeyCode.F))
+                        _raycaster.Hit.collider.gameObject.GetComponent<keypickup>().pickedUp = true;
+                    
                     break;
-                case "note":
+                case "Note":
                     SetIcon(note);
                     SetSize(crosshairSize.medium);
+                    if (Input.GetKey(KeyCode.F))
+                        _raycaster.Hit.collider.gameObject.GetComponent<Note>().pickedUp = true;
                     break;
                 case "Door":
-                    SetIcon(note);
+                    SetIcon(pickUp);
+                    SetSize(crosshairSize.medium);
                     DoorOpenClose();
                     break;
+                case "Fuel":
+                    SetIcon(note);
+                    SetSize(crosshairSize.medium);
+                    if (Input.GetKey(KeyCode.F))
+                        _raycaster.Hit.collider.gameObject.GetComponent<fuelcan>().pickedUp = true;
+                    break;
+
+                case "Generator":
+                    SetIcon(note);
+                    SetSize(crosshairSize.medium);
+                    if (Input.GetKey(KeyCode.F))
+                        _raycaster.Hit.collider.gameObject.GetComponent<generator>().AddFuel();
+                    break;
+
                 default:
                     SetIcon(crosshair);
                     SetSize(crosshairSize.small);
@@ -84,7 +105,7 @@ public class Crosshair : MonoBehaviour {
         Debug.Log(_raycaster.Hit.collider.name);
         if (_raycaster.Hit.collider.name == "OutCollider")
         {
-            if(Input.GetKeyDown(KeyCode.Mouse0))
+            if(Input.GetKeyDown(KeyCode.F))
             {
                 
                 if (Door.GetComponent<DoorMvmt>().isOpen)
@@ -100,7 +121,7 @@ public class Crosshair : MonoBehaviour {
         }
         if (_raycaster.Hit.collider.name == "InCollider")
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.F))
             {
                
                 if (Door.GetComponent<DoorMvmt>().isOpen)
