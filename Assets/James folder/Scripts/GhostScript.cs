@@ -20,6 +20,8 @@ public class GhostScript : MonoBehaviour
 			if (ts.playerLightSource != null)
 			{
 				print("kill player");
+				targetSetter.SetActive(false); // disable target setter so ai won't move anymore
+				// implement player die here
 			}
 		}
 	}
