@@ -398,7 +398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433364490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.46, y: 0, z: -1.76}
+  m_LocalPosition: {x: 0.36, y: 0, z: -3.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -584,6 +584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onDoor: 0
+  targetSetter: {fileID: 1317457139}
 --- !u!65 &474690840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1502,9 +1503,8 @@ MonoBehaviour:
   envirlightSources:
   - {fileID: 350787837}
   - {fileID: 1235953112}
-  playerLightSource: {fileID: 433364491}
+  playerLightSource: {fileID: 0}
   ghost: {fileID: 474690833}
-  gs: {fileID: 0}
 --- !u!1 &1388311638
 GameObject:
   m_ObjectHideFlags: 0
