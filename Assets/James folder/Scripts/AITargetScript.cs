@@ -18,11 +18,11 @@ public class AITargetScript : MonoBehaviour
 	{
 		if (!gs.onDoor) // if ai is not trying to open a door, look for light sources
 		{
-			if (playerLightSource != null)
+			if (playerLightSource != null) // if there is a player light source, then look for player
 			{
 				transform.position = new Vector3(playerLightSource.position.x, 0, playerLightSource.position.z);
 			}
-			else if (envirlightSources.Count > 0)
+			else if (envirlightSources.Count > 0) // no player light source, but environment light source, look for nearest one
 			{
 				float minDis = int.MaxValue;
 				foreach (var source in envirlightSources)
@@ -34,6 +34,10 @@ public class AITargetScript : MonoBehaviour
 						transform.position = new Vector3(source.position.x, 0, source.position.z);
 					}
 				}
+			}
+			else // no player light source nor environment light source, stand still
+			{
+				transform.position = ghost.transform.position;
 			}
 		}
 	}
