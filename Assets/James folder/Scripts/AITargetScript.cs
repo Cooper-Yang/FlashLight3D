@@ -7,7 +7,7 @@ public class AITargetScript : MonoBehaviour
     public List<Transform> envirlightSources;
     public Transform playerLightSource;
 	public GameObject ghost;
-	public GhostScript gs;
+	private GhostScript gs;
 
 	private void Start()
 	{
