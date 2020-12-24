@@ -105,17 +105,17 @@ public class Crosshair : MonoBehaviour {
         Debug.Log(_raycaster.Hit.collider.name);
         if (_raycaster.Hit.collider.name == "OutCollider")
         {
-            if(Input.GetKeyDown(KeyCode.F))
+           
+            if (Input.GetKeyDown(KeyCode.F))
             {
-                
-                if (Door.GetComponent<DoorMvmt>().isOpen)
+                if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen)
                 {
-                    Door.GetComponent<DoorMvmt>().isOpen = false;
+                    _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = false;
                 }
-                else if (Door.GetComponent<DoorMvmt>().isOpen == false)
+                else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen == false)
                 {
-                    Door.GetComponent<DoorMvmt>().doorState = 2;
-                    Door.GetComponent<DoorMvmt>().isOpen = true;
+                    _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 2;
+                    _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
                 }
             }
         }
@@ -123,15 +123,14 @@ public class Crosshair : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-               
-                if (Door.GetComponent<DoorMvmt>().isOpen)
+                if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen)
                 {
-                    Door.GetComponent<DoorMvmt>().isOpen = false;
+                    _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = false;
                 }
-                else if (Door.GetComponent<DoorMvmt>().isOpen == false)
+                else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen == false)
                 {
-                    Door.GetComponent<DoorMvmt>().doorState = 1;
-                    Door.GetComponent<DoorMvmt>().isOpen = true;
+                    _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 1;
+                    _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
                 }
             }
         }
