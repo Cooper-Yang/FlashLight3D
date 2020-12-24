@@ -34,14 +34,14 @@ public class Note : MonoBehaviour
             inventory.Instance.paper1Carried = true;
             inventory.Instance.fPController.GetComponent<CameraController>().enabled = false;
             inventory.Instance.crosshair.GetComponent<Canvas>().enabled = false;
-            inventory.Instance.crosshair.GetComponent<flashlight>().enabled = false;
+            inventory.Instance.GetComponent<flashlight>().enabled = false;
         }
         else if (paper2)
         {
             inventory.Instance.paper2Carried = true;
             inventory.Instance.fPController.GetComponent<CameraController>().enabled = false;
             inventory.Instance.crosshair.GetComponent<Canvas>().enabled = false;
-            inventory.Instance.crosshair.GetComponent<flashlight>().enabled = false;
+            inventory.Instance.GetComponent<flashlight>().enabled = false;
         }
     }
 
@@ -52,14 +52,14 @@ public class Note : MonoBehaviour
             inventory.Instance.paper1Carried = false;
             inventory.Instance.fPController.GetComponent<CameraController>().enabled = true;
             inventory.Instance.crosshair.GetComponent<Canvas>().enabled = true;
-            inventory.Instance.crosshair.GetComponent<flashlight>().enabled = true;
+            inventory.Instance.GetComponent<flashlight>().enabled = true;
         }
         else if (paper2)
         {
             inventory.Instance.paper2Carried = false;
             inventory.Instance.fPController.GetComponent<CameraController>().enabled = true;
             inventory.Instance.crosshair.GetComponent<Canvas>().enabled = true;
-            inventory.Instance.crosshair.GetComponent<flashlight>().enabled = true;
+            inventory.Instance.GetComponent<flashlight>().enabled = true;
         }
     }
 }
