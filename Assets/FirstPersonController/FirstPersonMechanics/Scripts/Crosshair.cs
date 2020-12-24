@@ -39,6 +39,43 @@ public class Crosshair : MonoBehaviour {
         
     }
 
+    bool getKey;
+    bool getNote;
+    bool getFuel;
+    bool openDoor;
+    bool pourGenerator;
+    bool openLight;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (getKey)
+            {
+                _raycaster.Hit.collider.gameObject.GetComponent<keypickup>().pickedUp = true;
+            }
+            else if (getNote)
+            {
+                _raycaster.Hit.collider.gameObject.GetComponent<Note>().pickedUp = true;
+            }
+            else if (getFuel)
+            {
+                _raycaster.Hit.collider.gameObject.GetComponent<fuelcan>().pickedUp = true;
+            }
+            else if (openDoor)
+            {
+                DoorOpenClose();
+            }
+            else if (pourGenerator)
+            {
+                _raycaster.Hit.collider.gameObject.GetComponent<generator>().AddFuel();
+            }
+            else if (openLight)
+            {
+                _raycaster.Hit.collider.gameObject.GetComponent<LightSwitchScript>().SwitchLights();
+            }
+        }
+    }
 
     private void OnDisable()
     {
@@ -56,46 +93,82 @@ public class Crosshair : MonoBehaviour {
                     Debug.Log("got key");
                     SetIcon(pickUp);
                     SetSize(crosshairSize.medium);
-                    if(Input.GetKey(KeyCode.F))
-                        _raycaster.Hit.collider.gameObject.GetComponent<keypickup>().pickedUp = true;
-                    
+                    getKey = true;
+                    getNote = false;
+                    getFuel = false;
+                    openDoor = false;
+                    pourGenerator = false;
+                    openLight = false;
+
                     break;
                 case "Note":
                     SetIcon(note);
                     SetSize(crosshairSize.medium);
-                    if (Input.GetKey(KeyCode.F))
-                        _raycaster.Hit.collider.gameObject.GetComponent<Note>().pickedUp = true;
+                    getKey = false;
+                    getNote = true;
+                    getFuel = false;
+                    openDoor = false;
+                    pourGenerator = false;
+                    openLight = false;
+
                     break;
                 case "Door":
                     SetIcon(pickUp);
                     SetSize(crosshairSize.medium);
-                    DoorOpenClose();
+                    getKey = false;
+                    getNote = false;
+                    getFuel = false;
+                    openDoor = true;
+                    pourGenerator = false;
+                    openLight = false;
                     break;
                 case "Fuel":
-                    SetIcon(note);
+                    SetIcon(pickUp);
                     SetSize(crosshairSize.medium);
-                    if (Input.GetKey(KeyCode.F))
-                        _raycaster.Hit.collider.gameObject.GetComponent<fuelcan>().pickedUp = true;
+                    getKey = false;
+                    getNote = false;
+                    getFuel = true;
+                    openDoor = false;
+                    pourGenerator = false;
+                    openLight = false;
+
                     break;
 
                 case "Generator":
-                    SetIcon(note);
+                    SetIcon(pickUp);
                     SetSize(crosshairSize.medium);
-                    if (Input.GetKey(KeyCode.F))
-                        _raycaster.Hit.collider.gameObject.GetComponent<generator>().AddFuel();
+                    getKey = false;
+                    getNote = false;
+                    getFuel = false;
+                    openDoor = false;
+                    pourGenerator = true;
+                    openLight = false;
+
                     break;
 
                 case "Light Switch":
-                    if (Input.GetKeyDown(KeyCode.F))
-					{
-                        print("switch");
-                        _raycaster.Hit.collider.gameObject.GetComponent<LightSwitchScript>().SwitchLights();
-					}
+                    
+                    SetIcon(pickUp);
+                    SetSize(crosshairSize.medium);
+                    print("switch");
+                    getKey = false;
+                    getNote = false;
+                    getFuel = false;
+                    openDoor = false;
+                    pourGenerator = false;
+                    openLight = true;
+
                     break;
 
                 default:
                     SetIcon(crosshair);
                     SetSize(crosshairSize.small);
+                    getKey = false;
+                    getNote = false;
+                    getFuel = false;
+                    openDoor = false;
+                    pourGenerator = false;
+                    openLight = false;
                     break;
             }
         }
@@ -110,12 +183,11 @@ public class Crosshair : MonoBehaviour {
 
     void DoorOpenClose()
     {
-        Debug.Log(_raycaster.Hit.collider.name);
+        //ebug.Log(_raycaster.Hit.collider.name);
         if (_raycaster.Hit.collider.name == "OutCollider")
         {
            
-            if (Input.GetKeyDown(KeyCode.F))
-            {
+            
                 if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen)
                 {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = false;
@@ -125,12 +197,11 @@ public class Crosshair : MonoBehaviour {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 2;
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
                 }
-            }
+            
         }
         if (_raycaster.Hit.collider.name == "InCollider")
         {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
+            
                 if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen)
                 {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = false;
@@ -140,7 +211,7 @@ public class Crosshair : MonoBehaviour {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 1;
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
                 }
-            }
+            
         }
 
 
