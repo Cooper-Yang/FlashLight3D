@@ -5,8 +5,11 @@ using UnityEngine.UI;
 
 public class inventory : MonoBehaviour
 {
+    public GameObject fuelUI;
     public int fuelCarried;
     public Text invFuel;
+
+    public GameObject genUI;
 
     public bool key1Carried;
     public GameObject key1;
@@ -20,7 +23,10 @@ public class inventory : MonoBehaviour
 
     public GameObject fPController;
     public GameObject crosshair;
+    public GameObject torch;
 
+    public bool firstPickFuel;
+    public bool firstGen;
     public bool generatorCanWork;
 
     private static inventory _instance;
@@ -44,12 +50,24 @@ public class inventory : MonoBehaviour
         key1Carried = false;
         key2Carried = false;
         paper1Carried = false;
+        firstPickFuel = false;
+        firstGen = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         invFuel.text = fuelCarried+"";
+
+        if (firstPickFuel == true)
+        {
+            fuelUI.SetActive(true);
+        }
+        if (firstGen == true)
+        {
+            genUI.SetActive(true);
+        }
+
 
         if (key1Carried == true)
         {
