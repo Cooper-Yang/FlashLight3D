@@ -85,6 +85,14 @@ public class Crosshair : MonoBehaviour {
                         _raycaster.Hit.collider.gameObject.GetComponent<generator>().AddFuel();
                     break;
 
+                case "Light Switch":
+                    if (Input.GetKey(KeyCode.F))
+					{
+                        print("switch");
+                        _raycaster.Hit.collider.gameObject.GetComponent<LightSwitchScript>().SwitchLights();
+					}
+                    break;
+
                 default:
                     SetIcon(crosshair);
                     SetSize(crosshairSize.small);
