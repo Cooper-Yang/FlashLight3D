@@ -86,7 +86,7 @@ public class Crosshair : MonoBehaviour {
                     break;
 
                 case "Light Switch":
-                    if (Input.GetKey(KeyCode.F))
+                    if (Input.GetKeyDown(KeyCode.F))
 					{
                         print("switch");
                         _raycaster.Hit.collider.gameObject.GetComponent<LightSwitchScript>().SwitchLights();
