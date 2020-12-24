@@ -22,6 +22,11 @@ public class fuelcan : MonoBehaviour
 
     public void PickedUp()
     {
+        if (inventory.Instance.firstPickFuel == false)
+        {
+            inventory.Instance.firstPickFuel = true;
+        }
+
         inventory.Instance.fuelCarried++;
         Destroy(gameObject);
     }
