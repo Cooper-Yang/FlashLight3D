@@ -35,6 +35,11 @@ public class generator : MonoBehaviour
 
     public void AddFuel()
     {
+        if (inventory.Instance.firstGen == false)
+        {
+            inventory.Instance.firstGen = true;
+        }
+
         fuelAmt += invFuel;
         inventory.Instance.fuelCarried = 0;
     }
