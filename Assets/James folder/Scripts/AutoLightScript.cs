@@ -6,11 +6,14 @@ public class AutoLightScript : MonoBehaviour
 {
 	public List<GameObject> myLightChildren;
 	public bool changeMat;
+	public bool on;
 
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player"))
 		{
+			LightManager.me.lightTransforms.Add(transform);
+			LightManager.me.UpdateAiTarget();
 			foreach (var lightSource in myLightChildren)
 			{
 				print("activate light source");
@@ -31,6 +34,8 @@ public class AutoLightScript : MonoBehaviour
 	{
 		if (other.CompareTag("Player"))
 		{
+			LightManager.me.lightTransforms.Remove(transform);
+			LightManager.me.UpdateAiTarget();
 			foreach (var lightSource in myLightChildren)
 			{
 				print("disable light source");
