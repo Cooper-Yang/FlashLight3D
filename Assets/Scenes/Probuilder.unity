@@ -9728,7 +9728,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 231053920}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &231053920
 Animator:
   serializedVersion: 3
@@ -10252,7 +10257,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 267561691}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &267561691
 Animator:
   serializedVersion: 3
@@ -12450,7 +12460,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 294760292}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &294760292
 Animator:
   serializedVersion: 3
@@ -21716,7 +21731,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 467662323}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &467662323
 Animator:
   serializedVersion: 3
@@ -24584,7 +24604,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 600602519}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &600602519
 Animator:
   serializedVersion: 3
@@ -24845,7 +24870,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 615795851}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &615795851
 Animator:
   serializedVersion: 3
@@ -29680,7 +29710,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 812174882}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &812174882
 Animator:
   serializedVersion: 3
@@ -31284,7 +31319,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 904255981}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &904255981
 Animator:
   serializedVersion: 3
@@ -34153,7 +34193,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 987168432}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &987168432
 Animator:
   serializedVersion: 3
@@ -37696,7 +37741,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 1112728971}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &1112728971
 Animator:
   serializedVersion: 3
@@ -40480,7 +40530,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 1197500912}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &1197500912
 Animator:
   serializedVersion: 3
@@ -42317,7 +42372,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 1285967390}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &1285967390
 Animator:
   serializedVersion: 3
@@ -42882,7 +42942,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 1300769573}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &1300769573
 Animator:
   serializedVersion: 3
@@ -43677,7 +43742,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 1340307594}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &1340307594
 Animator:
   serializedVersion: 3
@@ -71559,7 +71629,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 1370825527}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &1370825527
 Animator:
   serializedVersion: 3
@@ -72514,7 +72589,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 1405460203}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &1405460203
 Animator:
   serializedVersion: 3
@@ -72657,7 +72737,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 1419636254}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &1419636254
 Animator:
   serializedVersion: 3
@@ -77664,7 +77749,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 1543644463}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &1543644463
 Animator:
   serializedVersion: 3
@@ -80759,7 +80849,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 1712613658}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &1712613658
 Animator:
   serializedVersion: 3
@@ -81943,7 +82038,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 1761130735}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!1 &1761757574 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1760949359999694, guid: 509704537faff2343ba4d87798dc63e4,
@@ -89879,7 +89979,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorAnim: {fileID: 2001411498}
   isOpen: 0
+  canOpen: 0
   doorState: 0
+  isLocked: 0
+  Lock1: 0
+  Lock2: 0
+  inventory: {fileID: 620292045}
 --- !u!95 &2001411498
 Animator:
   serializedVersion: 3

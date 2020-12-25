@@ -9,7 +9,6 @@ public class LightSwitchScript : MonoBehaviour
 
     public void SwitchLights()
 	{
-		print("?");
 		for (int i = 0; i < lightsIcontrol.Count; i++)
 		{
 			for (int j = 0; j < lightsIcontrol[i].transform.childCount; j++)
@@ -19,6 +18,8 @@ public class LightSwitchScript : MonoBehaviour
 					if (lightsIcontrol[i].transform.GetChild(j).gameObject.activeSelf)
 					{
 						print("turn it off");
+						LightManager.me.lightTransforms.Remove(lightsIcontrol[i].transform);
+						LightManager.me.UpdateAiTarget();
 						lightsIcontrol[i].transform.GetChild(j).gameObject.SetActive(false);
 						if (changeMatToo)
 						{
@@ -31,6 +32,8 @@ public class LightSwitchScript : MonoBehaviour
 					else
 					{
 						print("turn them on");
+						LightManager.me.lightTransforms.Add(lightsIcontrol[i].transform);
+						LightManager.me.UpdateAiTarget();
 						lightsIcontrol[i].transform.GetChild(j).gameObject.SetActive(true);
 						if (changeMatToo)
 						{
