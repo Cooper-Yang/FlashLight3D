@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class AITargetScript : MonoBehaviour
 {
+	static public AITargetScript me;
     public List<Transform> envirlightSources;
     public Transform playerLightSource;
 	public GameObject ghost;
 	private GhostScript gs;
+
+	private void Awake()
+	{
+		me = this;
+	}
 
 	private void Start()
 	{

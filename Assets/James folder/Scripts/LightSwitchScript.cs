@@ -18,6 +18,8 @@ public class LightSwitchScript : MonoBehaviour
 					if (lightsIcontrol[i].transform.GetChild(j).gameObject.activeSelf)
 					{
 						print("turn it off");
+						LightManager.me.lightTransforms.Remove(lightsIcontrol[i].transform);
+						LightManager.me.UpdateAiTarget();
 						lightsIcontrol[i].transform.GetChild(j).gameObject.SetActive(false);
 						if (changeMatToo)
 						{
@@ -30,6 +32,8 @@ public class LightSwitchScript : MonoBehaviour
 					else
 					{
 						print("turn them on");
+						LightManager.me.lightTransforms.Add(lightsIcontrol[i].transform);
+						LightManager.me.UpdateAiTarget();
 						lightsIcontrol[i].transform.GetChild(j).gameObject.SetActive(true);
 						if (changeMatToo)
 						{
