@@ -9,7 +9,6 @@ public class LightSwitchScript : MonoBehaviour
 
     public void SwitchLights()
 	{
-		print("?");
 		for (int i = 0; i < lightsIcontrol.Count; i++)
 		{
 			for (int j = 0; j < lightsIcontrol[i].transform.childCount; j++)
