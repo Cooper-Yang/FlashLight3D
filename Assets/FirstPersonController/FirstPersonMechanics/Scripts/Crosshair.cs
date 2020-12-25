@@ -186,8 +186,9 @@ public class Crosshair : MonoBehaviour {
         //ebug.Log(_raycaster.Hit.collider.name);
         if (_raycaster.Hit.collider.name == "OutCollider")
         {
-           
-            
+            if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen)
+            {
+
                 if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen)
                 {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = false;
@@ -197,11 +198,17 @@ public class Crosshair : MonoBehaviour {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 2;
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
                 }
-            
+            }
+            else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen == false)
+            {
+                //tell player door is locked
+            }
         }
         if (_raycaster.Hit.collider.name == "InCollider")
         {
-            
+            if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen)
+            {
+
                 if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen)
                 {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = false;
@@ -211,7 +218,12 @@ public class Crosshair : MonoBehaviour {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 1;
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
                 }
-            
+            }
+            else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen == false)
+            {
+                //tell player door is locked
+            }
+
         }
 
 
