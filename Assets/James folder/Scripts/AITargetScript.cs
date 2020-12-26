@@ -43,6 +43,7 @@ public class AITargetScript : MonoBehaviour
 			}
 			else // no player light source nor environment light source, stand still
 			{
+				print("stand still");
 				transform.position = ghost.transform.position;
 			}
 		}
