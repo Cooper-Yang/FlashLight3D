@@ -21,11 +21,13 @@ public class flashlight : MonoBehaviour
             {
                 torch.enabled = false;
                 on = false;
+                AudioManager.Instance.FlashLightClick();
             }
             else if (on == false)
             {
                 torch.enabled = true;
                 on = true;
+                AudioManager.Instance.FlashLightClick();
             }
         }
         

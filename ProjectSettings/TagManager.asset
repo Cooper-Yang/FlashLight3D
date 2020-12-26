@@ -12,6 +12,7 @@ TagManager:
   - Generator
   - Light Switch
   - Light
+  - DoorAIDetection
   layers:
   - Default
   - TransparentFX
