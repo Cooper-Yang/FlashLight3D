@@ -47,4 +47,14 @@ public class AITargetScript : MonoBehaviour
 			}
 		}
 	}
+	
+	public void ChasePlayer(Transform playerTransform)
+	{
+		playerLightSource = playerTransform;
+	}
+
+	public void StopChasingPlayer()
+	{
+		playerLightSource = null;
+	}
 }
