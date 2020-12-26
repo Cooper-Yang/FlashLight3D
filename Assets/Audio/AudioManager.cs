@@ -73,7 +73,7 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            Heartbeat.volume = 0.1f ;
+            Heartbeat.volume = 0.02f ;
             Heartbeat.pitch = 1f ;
         }
         
