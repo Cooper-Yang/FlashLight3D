@@ -43,7 +43,7 @@ public class CamControl : MonoBehaviour
                 fallSpeed -= 0.8f * Time.deltaTime;
                 //fallSpeed *= 1.01f;
             }
-            deathCam.transform.position = new Vector3(deathCam.transform.position.x, Mathf.Lerp(deathCam.transform.position.y, 1f, 1 - fallSpeed/defFallSpeed), deathCam.transform.position.z);
+            deathCam.transform.position = new Vector3(deathCam.transform.position.x, Mathf.Lerp(deathCam.transform.position.y, 2.3f, 1 - fallSpeed/defFallSpeed), deathCam.transform.position.z);
             if(fallSpeed <= 0)
             {
                 if(fallTime <= 0)
@@ -58,7 +58,7 @@ public class CamControl : MonoBehaviour
                     if (rotateTime < 0)
                         rotateTime = 0;
                     deathCam.transform.position = new Vector3(deathCam.transform.position.x, 
-                                                              Mathf.Lerp(deathCam.transform.position.y, 0.45f, (fallSpeed / defFallSpeed) * -1), deathCam.transform.position.z);
+                                                              Mathf.Lerp(deathCam.transform.position.y, 1.85f, (fallSpeed / defFallSpeed) * -1), deathCam.transform.position.z);
                     deathCam.transform.rotation = Quaternion.Euler(deathCam.transform.rotation.eulerAngles.x, deathCam.transform.rotation.eulerAngles.y, 
                                                   Mathf.Lerp(deathCam.transform.rotation.eulerAngles.z, -76f, 1 - rotateTime/defRotateTime));
                     Color color = black.GetComponent<Image>().color;
