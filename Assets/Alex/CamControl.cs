@@ -11,6 +11,7 @@ public class CamControl : MonoBehaviour
     public bool isDead;//dead bool
     public GameObject black;//black panel
     public GameObject player;
+    public Text dead;
     [Header("Controll Times")]
     //No need to change non-def floats. Public is easy for checking.
     //Change only def floats.
@@ -23,6 +24,7 @@ public class CamControl : MonoBehaviour
 
     void Start()
     {
+        dead.gameObject.SetActive(false);
         deathCam.gameObject.SetActive(false);
         mainCam.gameObject.SetActive(true);
         fallSpeed = defFallSpeed;
@@ -72,6 +74,8 @@ public class CamControl : MonoBehaviour
             }
             if(black.GetComponent<Image>().color.a >= 1)
             {
+                dead.gameObject.SetActive(true);
+                dead.text = "You died.\nMaybe...use the torch wisely...\nPress 'R' to start the next samsara.";
                 if (Input.GetKeyDown(KeyCode.R))
                 {
                     SceneManager.LoadScene(0);
