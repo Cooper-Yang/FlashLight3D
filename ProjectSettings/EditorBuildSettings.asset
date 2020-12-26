@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Probuilder.unity
+    guid: f4ac1b5ff3913ec48885f87ea7c34e7e
+  - enabled: 1
     path: Assets/Alex/TestLab.unity
     guid: d2c3e15efa76e1e42b675db269072a90
   m_configObjects: {}
