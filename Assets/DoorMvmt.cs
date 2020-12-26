@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class DoorMvmt : MonoBehaviour
 {
@@ -15,13 +16,8 @@ public class DoorMvmt : MonoBehaviour
     public bool Lock2 = false; //check if it can be open by key 2
     public GameObject inventory;
 
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool canOpenByGhost = false;
+    private bool settodoor = false;
 
     // Update is called once per frame
     void Update()
@@ -31,6 +27,15 @@ public class DoorMvmt : MonoBehaviour
         DoorAnim.SetInteger("OpenState", doorState);
 
         canOpen = CheckDoorLock();
+
+        if(canOpenByGhost)
+        {
+            if(settodoor == false)
+            {
+                changeLayerToDoors();
+            }
+            
+        }
 
     }
 
@@ -54,7 +59,7 @@ public class DoorMvmt : MonoBehaviour
                     return true;
                 }
                 else
-                    Debug.Log("No Key1");
+                    //Debug.Log("No Key1");
                     return false;
             }
             if (Lock2)
@@ -64,12 +69,12 @@ public class DoorMvmt : MonoBehaviour
                     return true;
                 }
                 else
-                    Debug.Log("No Key2");
+                    //Debug.Log("No Key2");
                     return false;
             }
             else
             {
-                Debug.Log("No Lock Chosen");
+                //Debug.Log("No Lock Chosen");
                 return false;
             }
                 
@@ -80,6 +85,22 @@ public class DoorMvmt : MonoBehaviour
             return true;
 
 
+    }
+
+    public void changeLayerToDoors()
+    {
+        this.gameObject.layer = LayerMask.NameToLayer("Doors");
+        foreach(Transform child in transform)
+        {
+            child.gameObject.layer = LayerMask.NameToLayer("Doors");
+            foreach(Transform c in child.transform)
+            {
+                c.gameObject.layer = LayerMask.NameToLayer("Doors");
+            }
+        }
+
+        AstarPath.active.Scan();
+        settodoor = true;
     }
 
     

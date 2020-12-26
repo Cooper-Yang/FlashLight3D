@@ -69,6 +69,7 @@ public class Crosshair : MonoBehaviour {
             else if (openDoor)
             {
                 DoorOpenClose();
+                
             }
             else if (pourGenerator)
             {
@@ -226,7 +227,7 @@ public class Crosshair : MonoBehaviour {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 2;
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
                     _raycaster.Hit.collider.gameObject.GetComponent<DoorScript>().closed = false;
-                    
+                    _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpenByGhost = true;
                 }
             }
             else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen == false)
@@ -256,7 +257,7 @@ public class Crosshair : MonoBehaviour {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 1;
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
                     _raycaster.Hit.collider.gameObject.GetComponent<DoorScript>().closed = false;
-                    
+                    _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpenByGhost = true;
                 }
             }
             else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen == false)
