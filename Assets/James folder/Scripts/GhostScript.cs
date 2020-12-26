@@ -9,6 +9,7 @@ public class GhostScript : MonoBehaviour
 	private AITargetScript ts;
 	//public Animator GhostAnim;
 	public Animation GhostAnim;
+	public GameObject camControl;
 
 	private void Start()
 	{
@@ -29,7 +30,7 @@ public class GhostScript : MonoBehaviour
 			{
 				print("kill player");
 				targetSetter.SetActive(false); // disable target setter so ai won't move anymore
-
+				camControl.GetComponent<CamControl>().isDead = true;  //Player die here.
 				// implement player die here
 			}
 		}
