@@ -75,7 +75,7 @@ public class CamControl : MonoBehaviour
             if(black.GetComponent<Image>().color.a >= 1)
             {
                 dead.gameObject.SetActive(true);
-                dead.text = "You died.\nMaybe...use the torch wisely...\nPress 'R' to start the next samsara.";
+                dead.text = "You died.\nMaybe...use the torch wisely...\nPress ‘R’ to start the next samsara.";
                 if (Input.GetKeyDown(KeyCode.R))
                 {
                     SceneManager.LoadScene(0);
