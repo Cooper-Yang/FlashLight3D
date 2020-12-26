@@ -23,6 +23,7 @@ public class inventory : MonoBehaviour
 
     public GameObject fPController;
     public GameObject crosshair;
+    public GameObject crosshairObject;
     public GameObject torch;
 
     public bool firstPickFuel;

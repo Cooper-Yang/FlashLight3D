@@ -45,6 +45,7 @@ public class Crosshair : MonoBehaviour {
     bool openDoor;
     bool pourGenerator;
     bool openLight;
+    bool openGenSwitch;
 
     private void Update()
     {
@@ -68,6 +69,7 @@ public class Crosshair : MonoBehaviour {
             else if (openDoor)
             {
                 DoorOpenClose();
+                
             }
             else if (pourGenerator)
             {
@@ -78,6 +80,9 @@ public class Crosshair : MonoBehaviour {
             {
                 _raycaster.Hit.collider.gameObject.GetComponent<LightSwitchScript>().SwitchLights();
                 AudioManager.Instance.LightSwitch();
+            }else if (openGenSwitch)
+            {
+                _raycaster.Hit.collider.gameObject.GetComponent<GeneratorSwitch>().SwitchToTheEnd();
             }
         }
     }
@@ -104,7 +109,7 @@ public class Crosshair : MonoBehaviour {
                     openDoor = false;
                     pourGenerator = false;
                     openLight = false;
-
+                    openGenSwitch = false;
                     break;
                 case "Note":
                     SetIcon(note);
@@ -115,7 +120,7 @@ public class Crosshair : MonoBehaviour {
                     openDoor = false;
                     pourGenerator = false;
                     openLight = false;
-
+                    openGenSwitch = false;
                     break;
                 case "Door":
                     SetIcon(pickUp);
@@ -126,6 +131,7 @@ public class Crosshair : MonoBehaviour {
                     openDoor = true;
                     pourGenerator = false;
                     openLight = false;
+                    openGenSwitch = false;
                     break;
                 case "Fuel":
                     SetIcon(pickUp);
@@ -136,7 +142,7 @@ public class Crosshair : MonoBehaviour {
                     openDoor = false;
                     pourGenerator = false;
                     openLight = false;
-
+                    openGenSwitch = false;
                     break;
 
                 case "Generator":
@@ -148,7 +154,7 @@ public class Crosshair : MonoBehaviour {
                     openDoor = false;
                     pourGenerator = true;
                     openLight = false;
-
+                    openGenSwitch = false;
                     break;
 
                 case "Light Switch":
@@ -162,9 +168,19 @@ public class Crosshair : MonoBehaviour {
                     openDoor = false;
                     pourGenerator = false;
                     openLight = true;
-
+                    openGenSwitch = false;
                     break;
-
+                case "GenSwitch":
+                    SetIcon(pickUp);
+                    SetSize(crosshairSize.big);
+                    getKey = false;
+                    getNote = false;
+                    getFuel = false;
+                    openDoor = false;
+                    pourGenerator = false;
+                    openLight = false;
+                    openGenSwitch = true;
+                    break;
                 default:
                     SetIcon(crosshair);
                     SetSize(new Vector2(0,0));
@@ -174,6 +190,7 @@ public class Crosshair : MonoBehaviour {
                     openDoor = false;
                     pourGenerator = false;
                     openLight = false;
+                    openGenSwitch = false;
                     break;
             }
         }
@@ -210,7 +227,7 @@ public class Crosshair : MonoBehaviour {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 2;
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
                     _raycaster.Hit.collider.gameObject.GetComponent<DoorScript>().closed = false;
-                    
+                    _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpenByGhost = true;
                 }
             }
             else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen == false)
@@ -240,7 +257,7 @@ public class Crosshair : MonoBehaviour {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 1;
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
                     _raycaster.Hit.collider.gameObject.GetComponent<DoorScript>().closed = false;
-                    
+                    _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpenByGhost = true;
                 }
             }
             else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen == false)

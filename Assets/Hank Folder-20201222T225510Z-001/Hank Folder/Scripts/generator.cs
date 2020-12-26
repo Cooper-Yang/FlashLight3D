@@ -10,7 +10,7 @@ public class generator : MonoBehaviour
 
     public int invFuel;
 
-    
+    bool canStart;
 
     public Text genFuel;
 
@@ -18,6 +18,7 @@ public class generator : MonoBehaviour
     {
         fuelCap = 5;
         inventory.Instance.generatorCanWork = false;
+        canStart = true;
     }
 
     // Update is called once per frame
@@ -31,6 +32,13 @@ public class generator : MonoBehaviour
         {
             inventory.Instance.generatorCanWork = true;
         }
+
+        if(inventory.Instance.generatorCanWork && canStart)
+        {
+            GetComponent<AudioSource>().Play();
+            canStart = false;
+        }
+
     }
 
     public void AddFuel()

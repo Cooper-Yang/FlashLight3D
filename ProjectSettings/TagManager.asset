@@ -13,6 +13,7 @@ TagManager:
   - Light Switch
   - Light
   - DoorAIDetection
+  - GenSwitch
   layers:
   - Default
   - TransparentFX

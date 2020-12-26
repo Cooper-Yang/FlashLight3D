@@ -19,11 +19,13 @@ public class DoorScript : MonoBehaviour
 	{
 		if (other.gameObject.CompareTag("Ghost") && closed) // if collide with ghost when door is closed
 		{
-			//print("ghost on door");
-			aiTarget.position = ghost.transform.position; // tell ai to stop moving
-			//other.gameObject.GetComponent<AIDestinationSetter>().enabled = false;
-			gs.onDoor = true;
-			
+			if (this.GetComponentInParent<DoorMvmt>().canOpenByGhost)
+			{
+				//print("ghost on door");
+				aiTarget.position = ghost.transform.position; // tell ai to stop moving
+															  //other.gameObject.GetComponent<AIDestinationSetter>().enabled = false;
+				gs.onDoor = true;
+			}
 		}
 	}
 
@@ -31,7 +33,14 @@ public class DoorScript : MonoBehaviour
 	{
 		if (other.gameObject.CompareTag("Ghost"))
 		{
-			actualDurability -= 1f * Time.deltaTime; // when ai is inside a trigger, decrease its durability
+			if (this.GetComponentInParent<DoorMvmt>().canOpenByGhost)
+			{
+				actualDurability -= 1f * Time.deltaTime; // when ai is inside a trigger, decrease its durability
+				if (ghost.GetComponent<PoundingSound>().canPound && closed)
+				{
+					StartCoroutine(ghost.GetComponent<PoundingSound>().Pounding());
+				}
+			}
 		}
 	}
 

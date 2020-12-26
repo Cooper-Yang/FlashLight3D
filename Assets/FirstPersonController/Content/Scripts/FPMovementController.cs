@@ -16,7 +16,7 @@ public class FPMovementController : MonoBehaviour
     [SerializeField] private bool  slopLimitEnabled;
     [SerializeField] private float slopeLimit;
     [Header("Sounds")]
-    [SerializeField] private AudioClip footstepClip;
+    [SerializeField] private AudioClip[] footstepClip;
     [SerializeField] private AudioClip landingClip;
     [SerializeField] private AudioClip jumpingClip;
     [Range(0.0f, 1.0f)]
@@ -40,6 +40,7 @@ public class FPMovementController : MonoBehaviour
     private Vector3 YAxisGravity;
     private AudioSource audioSource;
 
+    bool okToWalk = true;
     #region Properties
     public bool IsRunning
     {
@@ -155,6 +156,7 @@ public class FPMovementController : MonoBehaviour
     #region Sounds
     public void PlayFootStepsSound()
     {
+        
         if (IsGrounded() && rb.velocity.magnitude > 5.0f && !audioSource.isPlaying)
         {
             if (IsRunning)
@@ -165,12 +167,23 @@ public class FPMovementController : MonoBehaviour
             }
             else
             {
-                audioSource.volume = footstepsVol / 2;
+                audioSource.volume = 1;
                 audioSource.pitch = .8f;
             }
 
-            audioSource.PlayOneShot(footstepClip);
+            if (okToWalk)
+            {
+                StartCoroutine(footSound());
+            }
         }
+    }
+
+    IEnumerator footSound()
+    {
+        audioSource.PlayOneShot(footstepClip[Random.Range(0, footstepClip.Length)]);
+        okToWalk = false;
+        yield return new WaitForSeconds(0.5f);
+        okToWalk = true;
     }
 
     public void PlayLandingSound()
