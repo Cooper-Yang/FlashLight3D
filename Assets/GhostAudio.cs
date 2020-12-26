@@ -8,7 +8,7 @@ public class GhostAudio : MonoBehaviour
     public AudioClip ghostIdle;
     public AudioClip ghostScream;
     public Transform player;
-    
+    public GameObject torch;
     public AudioSource aSScraeam;
 
     bool canScream = true;
@@ -19,11 +19,15 @@ public class GhostAudio : MonoBehaviour
     {
         float dist = Vector3.Distance(player.position, transform.position);
         //print(dist);
-        if (dist < 25 && canScream)
+        if (dist < 25 && canScream&&torch.GetComponent<flashlight>().on)
         {
             Debug.Log("scream!");
             aSScraeam.Play();
             canScream = false;
+        }
+        else if(dist>32)
+        {
+            canScream = true;
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class DoorMvmt : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class DoorMvmt : MonoBehaviour
     public GameObject inventory;
 
     public bool canOpenByGhost = false;
-
+    private bool settodoor = false;
 
     // Update is called once per frame
     void Update()
@@ -26,6 +27,15 @@ public class DoorMvmt : MonoBehaviour
         DoorAnim.SetInteger("OpenState", doorState);
 
         canOpen = CheckDoorLock();
+
+        if(canOpenByGhost)
+        {
+            if(settodoor == false)
+            {
+                changeLayerToDoors();
+            }
+            
+        }
 
     }
 
@@ -75,6 +85,22 @@ public class DoorMvmt : MonoBehaviour
             return true;
 
 
+    }
+
+    public void changeLayerToDoors()
+    {
+        this.gameObject.layer = LayerMask.NameToLayer("Doors");
+        foreach(Transform child in transform)
+        {
+            child.gameObject.layer = LayerMask.NameToLayer("Doors");
+            foreach(Transform c in child.transform)
+            {
+                c.gameObject.layer = LayerMask.NameToLayer("Doors");
+            }
+        }
+
+        AstarPath.active.Scan();
+        settodoor = true;
     }
 
     
