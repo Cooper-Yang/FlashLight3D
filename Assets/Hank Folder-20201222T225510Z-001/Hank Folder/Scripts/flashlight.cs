@@ -9,7 +9,7 @@ public class flashlight : MonoBehaviour
     
     void Start()
     {
-        on = true;
+        on = false;
     }
 
     // Update is called once per frame
@@ -21,11 +21,15 @@ public class flashlight : MonoBehaviour
             {
                 torch.enabled = false;
                 on = false;
+                AudioManager.Instance.FlashLightClick();
+                AITargetScript.me.StopChasingPlayer();
             }
             else if (on == false)
             {
                 torch.enabled = true;
                 on = true;
+                AudioManager.Instance.FlashLightClick();
+                AITargetScript.me.ChasePlayer(inventory.Instance.playerPos);
             }
         }
         

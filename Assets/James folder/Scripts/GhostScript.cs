@@ -6,23 +6,28 @@ public class GhostScript : MonoBehaviour
 {
     public bool onDoor;
 	public GameObject targetSetter;
-	private AITargetScript ts;
+	
+	//public Animator GhostAnim;
+	public Animation GhostAnim;
+	
 
-	private void Start()
-	{
-		ts = targetSetter.GetComponent<AITargetScript>();
+	
+
+    private void Update()
+    {
+		GhostAnimation();
 	}
 
-	private void OnTriggerEnter(Collider other)
-	{
-		if (other.CompareTag("Player"))
+    
+
+	void GhostAnimation()
+    {
+		if (transform.position == targetSetter.transform.position)
 		{
-			if (ts.playerLightSource != null)
-			{
-				print("kill player");
-				targetSetter.SetActive(false); // disable target setter so ai won't move anymore
-				// implement player die here
-			}
+			GhostAnim.Play("idle");
+
 		}
-	}
+		else
+			GhostAnim.Play("walk");
+    }
 }

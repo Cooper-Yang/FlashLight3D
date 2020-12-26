@@ -23,11 +23,14 @@ public class inventory : MonoBehaviour
 
     public GameObject fPController;
     public GameObject crosshair;
+    public GameObject crosshairObject;
     public GameObject torch;
 
     public bool firstPickFuel;
     public bool firstGen;
     public bool generatorCanWork;
+
+    public Transform playerPos;
 
     private static inventory _instance;
     public static inventory Instance { get { return _instance; } }
