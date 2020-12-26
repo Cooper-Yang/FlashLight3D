@@ -36,6 +36,10 @@ public class DoorScript : MonoBehaviour
 		if (other.gameObject.CompareTag("Ghost"))
 		{
 			actualDurability -= 1f * Time.deltaTime; // when ai is inside a trigger, decrease its durability
+            if (ghost.GetComponent<PoundingSound>().canPound && closed)
+            {
+				StartCoroutine(ghost.GetComponent<PoundingSound>().Pounding());
+            }
 		}
 	}
 

@@ -15,13 +15,8 @@ public class DoorMvmt : MonoBehaviour
     public bool Lock2 = false; //check if it can be open by key 2
     public GameObject inventory;
 
+    public bool canOpenByGhost = false;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -54,7 +49,7 @@ public class DoorMvmt : MonoBehaviour
                     return true;
                 }
                 else
-                    Debug.Log("No Key1");
+                    //Debug.Log("No Key1");
                     return false;
             }
             if (Lock2)
@@ -64,12 +59,12 @@ public class DoorMvmt : MonoBehaviour
                     return true;
                 }
                 else
-                    Debug.Log("No Key2");
+                    //Debug.Log("No Key2");
                     return false;
             }
             else
             {
-                Debug.Log("No Lock Chosen");
+                //Debug.Log("No Lock Chosen");
                 return false;
             }
                 
