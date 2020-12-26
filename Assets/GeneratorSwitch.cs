@@ -16,6 +16,10 @@ public class GeneratorSwitch : MonoBehaviour
             t2.PlayDelayed(1f);
             once = false;
         }
+        else
+        {
+            StartCoroutine(prompts.Instance.NotEnoughFuel());
+        }
         
     }
 }

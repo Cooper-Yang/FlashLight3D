@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.7379107, g: 0.7379107, b: 0.7379107, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0.3
+  m_AmbientIntensity: 1.67
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -6475,7 +6475,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh307876
+  m_Name: pb_Mesh747612
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13073,7 +13073,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh307924
+  m_Name: pb_Mesh747660
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14189,7 +14189,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh310060
+  m_Name: pb_Mesh749840
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23493,7 +23493,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh311100
+  m_Name: pb_Mesh750892
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24039,7 +24039,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh308334
+  m_Name: pb_Mesh748078
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24380,7 +24380,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh308528
+  m_Name: pb_Mesh748272
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25660,7 +25660,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hello my name is Hank you are going to die hehehehehe...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 3265648bc2c4de34bb440f65159e4fbb, type: 2}
   m_sharedMaterial: {fileID: 2045493592150795851, guid: 3265648bc2c4de34bb440f65159e4fbb,
     type: 2}
   m_fontSharedMaterials: []
@@ -25686,8 +25686,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -32933,7 +32933,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh310904
+  m_Name: pb_Mesh750690
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33846,7 +33846,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh39684
+  m_Name: pb_Mesh747684
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40745,7 +40745,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh309542
+  m_Name: pb_Mesh749306
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42648,7 +42648,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh310036
+  m_Name: pb_Mesh749816
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43059,7 +43059,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh310636
+  m_Name: pb_Mesh750422
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -47460,7 +47460,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314249109}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -9.05, y: -2.18, z: 2.4}
+  m_LocalPosition: {x: -9.05, y: -2.18, z: 2.57}
   m_LocalScale: {x: 2.079, y: 1.6632, z: 3.2091444}
   m_Children:
   - {fileID: 1112728969}
@@ -47612,7 +47612,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh309478
+  m_Name: pb_Mesh749242
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -47775,7 +47775,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh309388
+  m_Name: pb_Mesh749152
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -78722,7 +78722,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh308250
+  m_Name: pb_Mesh747994
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -83243,7 +83243,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh310284
+  m_Name: pb_Mesh750070
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -84134,7 +84134,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh309710
+  m_Name: pb_Mesh749482
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -86781,7 +86781,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh309062
+  m_Name: pb_Mesh748826
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -87359,7 +87359,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh308174
+  m_Name: pb_Mesh747918
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -89242,7 +89242,7 @@ Transform:
   m_GameObject: {fileID: 1776981923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.5000496, y: -7.5, z: -4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0.98210114}
   m_Children: []
   m_Father: {fileID: 257160726}
   m_RootOrder: 16
