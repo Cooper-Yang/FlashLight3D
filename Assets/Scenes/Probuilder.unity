@@ -22778,6 +22778,7 @@ MonoBehaviour:
   onDoor: 0
   targetSetter: {fileID: 1163036735}
   GhostAnim: {fileID: 623601526}
+  camControl: {fileID: 1425911872}
 --- !u!114 &467241511
 MonoBehaviour:
   m_ObjectHideFlags: 0
