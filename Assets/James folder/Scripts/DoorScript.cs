@@ -27,10 +27,6 @@ public class DoorScript : MonoBehaviour
 				gs.onDoor = true;
 			}
 		}
-		
-
-
-
 	}
 
 	private void OnTriggerStay(Collider other)

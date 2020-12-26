@@ -428,6 +428,7 @@ MonoBehaviour:
   gs: {fileID: 0}
   durability: 3
   closed: 1
+  oppositeCollider: {fileID: 0}
 --- !u!54 &391921991
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -657,6 +658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onDoor: 0
   targetSetter: {fileID: 1317457139}
+  GhostAnim: {fileID: 0}
 --- !u!65 &474690840
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -23,9 +23,9 @@ public class GhostScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
 	{
-		
 		if (other.CompareTag("Player"))
 		{
+			print("collide with player");
 			if (ts.playerLightSource != null)
 			{
 				print("kill player");
