@@ -29,6 +29,8 @@ public class inventory : MonoBehaviour
     public bool firstGen;
     public bool generatorCanWork;
 
+    public Transform playerPos;
+
     private static inventory _instance;
     public static inventory Instance { get { return _instance; } }
 

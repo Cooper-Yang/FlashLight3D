@@ -97,7 +97,7 @@ public class Crosshair : MonoBehaviour {
                 case "Key":
                     Debug.Log("got key");
                     SetIcon(pickUp);
-                    SetSize(crosshairSize.medium);
+                    SetSize(crosshairSize.big);
                     getKey = true;
                     getNote = false;
                     getFuel = false;
@@ -108,7 +108,7 @@ public class Crosshair : MonoBehaviour {
                     break;
                 case "Note":
                     SetIcon(note);
-                    SetSize(crosshairSize.medium);
+                    SetSize(crosshairSize.big);
                     getKey = false;
                     getNote = true;
                     getFuel = false;
@@ -119,7 +119,7 @@ public class Crosshair : MonoBehaviour {
                     break;
                 case "Door":
                     SetIcon(pickUp);
-                    SetSize(crosshairSize.medium);
+                    SetSize(crosshairSize.big);
                     getKey = false;
                     getNote = false;
                     getFuel = false;
@@ -129,7 +129,7 @@ public class Crosshair : MonoBehaviour {
                     break;
                 case "Fuel":
                     SetIcon(pickUp);
-                    SetSize(crosshairSize.medium);
+                    SetSize(crosshairSize.big);
                     getKey = false;
                     getNote = false;
                     getFuel = true;
@@ -141,7 +141,7 @@ public class Crosshair : MonoBehaviour {
 
                 case "Generator":
                     SetIcon(pickUp);
-                    SetSize(crosshairSize.medium);
+                    SetSize(crosshairSize.big);
                     getKey = false;
                     getNote = false;
                     getFuel = false;
@@ -154,7 +154,7 @@ public class Crosshair : MonoBehaviour {
                 case "Light Switch":
                     
                     SetIcon(pickUp);
-                    SetSize(crosshairSize.medium);
+                    SetSize(crosshairSize.big);
                     print("switch");
                     getKey = false;
                     getNote = false;
@@ -217,6 +217,7 @@ public class Crosshair : MonoBehaviour {
             {
                 //tell player door is locked
                 AudioManager.Instance.DoorLocked();
+                StartCoroutine(prompts.Instance.NoKey());
             }
         }
         if (_raycaster.Hit.collider.name == "InCollider")
@@ -245,6 +246,7 @@ public class Crosshair : MonoBehaviour {
             else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen == false)
             {
                 AudioManager.Instance.DoorLocked();
+                StartCoroutine(prompts.Instance.NoKey());
             }
 
         }

@@ -43,6 +43,11 @@ public class generator : MonoBehaviour
         if (invFuel > 0)
         {
             AudioManager.Instance.OilPour();
+            
+        }
+        else
+        {
+            StartCoroutine(prompts.Instance.NoFuel());  
         }
 
         fuelAmt += invFuel;
