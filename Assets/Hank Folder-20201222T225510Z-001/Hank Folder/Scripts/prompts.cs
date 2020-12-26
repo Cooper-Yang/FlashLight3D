@@ -5,92 +5,102 @@ using UnityEngine.UI;
 
 public class prompts : MonoBehaviour
 {
-    public bool notEnoughFuel;
-    public bool noFuel;
-    public bool noPower;
-    public bool noKey;
-    public bool haveAKey;
-    public bool haveBkey;
+
 
     public Text noFuels;
     public Text notEnoughFuels;
     public Text noPowers;
     public Text noKeys;
-    public Text wrongKey;
+ 
+
+    private static prompts _instance;
+    public static prompts Instance { get { return _instance; } }
+
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+    }
+
     void Start()
     {
-        notEnoughFuel = true;
-        noFuel = true;
-        noPower = true;
-        noKey = true;
-        haveAKey = false;
-        haveBkey = false;
+        /* notEnoughFuel = true;
+         noFuel = true;
+         noPower = true;
+         noKey = true;
+         haveAKey = false;
+         haveBkey = false;
+
+      */
+        noFuels.enabled = false;
+        notEnoughFuels.enabled = false;
+        noKeys.enabled = false;
+        noPowers.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (inventory.Instance.fuelCarried == 0)
-        {
-            noFuel = true;
-        }
-        else if(inventory.Instance.fuelCarried > 0)
-        {
-            noFuel = false;
-        }
-
-        if(inventory.Instance.generatorCanWork == false)
-        {
-            notEnoughFuel = true;
-        }
-        else if (inventory.Instance.generatorCanWork == true)
-        {
-            notEnoughFuel = false;
-        }
-
-        //interact with generator
-        if (noFuel) 
-        {
-            noFuels.enabled = true;
-        }
        
+        /*
+        //interact with generator
+        if (noFuel)
+        {
+            StartCoroutine(NoFuel());
+        }
+
         if (notEnoughFuel == true)
         {
-            notEnoughFuels.enabled = true;
-        }
-       
-
-        
-        if (inventory.Instance.key1Carried == false && inventory.Instance.key2Carried == false)
-        {
-            noKey = true;
-            haveAKey = false;
-            haveBkey = false;
-        }
-        if (inventory.Instance.key1Carried == true )
-        {
-            noKey = false;
-            haveAKey = true;
-            haveBkey = false;
-        }
-        if (inventory.Instance.key2Carried == true)
-        {
-            noKey = false;
-            haveAKey = false;
-            haveBkey = true;
+            StartCoroutine(NotEnoughFuel());
         }
 
         //interact with door
         if (noKey)
         {
-            noKeys.enabled = true;
+            StartCoroutine(NoKey());
         }
+
+      
 
         //interact with elevator door
         if (noPower)
         {
-            noPowers.enabled = true; ;
+            StartCoroutine(NoPower());
         }
-        
+         */
+
     }
+
+    public IEnumerator NoFuel()
+    {
+        noFuels.enabled = true;
+        yield return new WaitForSeconds(3f);
+        noFuels.enabled = false;
+    }
+    public IEnumerator NotEnoughFuel()
+    {
+        notEnoughFuels.enabled = true;
+        yield return new WaitForSeconds(3f);
+        notEnoughFuels.enabled = false;
+    }
+    public IEnumerator NoKey()
+    {
+        noKeys.enabled = true;
+        yield return new WaitForSeconds(3f);
+        noKeys.enabled = false;
+    }
+   
+    public IEnumerator NoPower()
+    {
+        noPowers.enabled = true;
+        yield return new WaitForSeconds(3f);
+        noPowers.enabled = false;
+    }
+
 }
