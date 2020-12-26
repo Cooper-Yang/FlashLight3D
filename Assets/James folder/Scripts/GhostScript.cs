@@ -9,6 +9,7 @@ public class GhostScript : MonoBehaviour
 	private AITargetScript ts;
 	//public Animator GhostAnim;
 	public Animation GhostAnim;
+	public GameObject camControl;
 
 	private void Start()
 	{
@@ -22,14 +23,14 @@ public class GhostScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
 	{
-		
 		if (other.CompareTag("Player"))
 		{
+			print("collide with player");
 			if (ts.playerLightSource != null)
 			{
 				print("kill player");
 				targetSetter.SetActive(false); // disable target setter so ai won't move anymore
-
+				camControl.GetComponent<CamControl>().isDead = true;  //Player die here.
 				// implement player die here
 			}
 		}
