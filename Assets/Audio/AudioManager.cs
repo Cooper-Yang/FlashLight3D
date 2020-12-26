@@ -65,7 +65,7 @@ public class AudioManager : MonoBehaviour
     public void HeartBeats()
     {
         float dist = Vector3.Distance(Player.position, Enemy.position);
-        print(dist);
+        //print(dist);
         if(dist < 20)
         {
             Heartbeat.volume = 0.1f + 0.9f * (1f-dist / 20f);
@@ -73,7 +73,7 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            Heartbeat.volume = 0.1f ;
+            Heartbeat.volume = 0.02f ;
             Heartbeat.pitch = 1f ;
         }
         

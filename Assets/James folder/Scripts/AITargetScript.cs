@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class AITargetScript : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class AITargetScript : MonoBehaviour
 	{
 		if (!gs.onDoor) // if ai is not trying to open a door, look for light sources
 		{
+			//ghost.GetComponent<AIDestinationSetter>().enabled = true;
 			if (playerLightSource != null) // if there is a player light source, then look for player
 			{
 				transform.position = new Vector3(playerLightSource.position.x, 0, playerLightSource.position.z);
@@ -33,18 +35,32 @@ public class AITargetScript : MonoBehaviour
 				float minDis = int.MaxValue;
 				foreach (var source in envirlightSources)
 				{
-					float dis = Vector3.Distance(source.position, ghost.transform.position);
-					if (minDis > dis)
+					if (source != null)
 					{
-						minDis = dis;
-						transform.position = new Vector3(source.position.x, 0, source.position.z);
+						float dis = Vector3.Distance(source.position, ghost.transform.position);
+						if (minDis > dis)
+						{
+							minDis = dis;
+							transform.position = new Vector3(source.position.x, 0, source.position.z);
+						}
 					}
 				}
 			}
 			else // no player light source nor environment light source, stand still
 			{
+				print("stand still");
 				transform.position = ghost.transform.position;
 			}
 		}
+	}
+	
+	public void ChasePlayer(Transform playerTransform)
+	{
+		playerLightSource = playerTransform;
+	}
+
+	public void StopChasingPlayer()
+	{
+		playerLightSource = null;
 	}
 }

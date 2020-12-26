@@ -45,6 +45,7 @@ public class Crosshair : MonoBehaviour {
     bool openDoor;
     bool pourGenerator;
     bool openLight;
+    bool openGenSwitch;
 
     private void Update()
     {
@@ -53,26 +54,35 @@ public class Crosshair : MonoBehaviour {
             if (getKey)
             {
                 _raycaster.Hit.collider.gameObject.GetComponent<keypickup>().pickedUp = true;
+                AudioManager.Instance.Keys();
             }
             else if (getNote)
             {
                 _raycaster.Hit.collider.gameObject.GetComponent<Note>().pickedUp = true;
+                AudioManager.Instance.Paper();
             }
             else if (getFuel)
             {
                 _raycaster.Hit.collider.gameObject.GetComponent<fuelcan>().pickedUp = true;
+                AudioManager.Instance.JerryCan();
             }
             else if (openDoor)
             {
                 DoorOpenClose();
+                
             }
             else if (pourGenerator)
             {
                 _raycaster.Hit.collider.gameObject.GetComponent<generator>().AddFuel();
+                
             }
             else if (openLight)
             {
                 _raycaster.Hit.collider.gameObject.GetComponent<LightSwitchScript>().SwitchLights();
+                AudioManager.Instance.LightSwitch();
+            }else if (openGenSwitch)
+            {
+                _raycaster.Hit.collider.gameObject.GetComponent<GeneratorSwitch>().SwitchToTheEnd();
             }
         }
     }
@@ -92,64 +102,65 @@ public class Crosshair : MonoBehaviour {
                 case "Key":
                     Debug.Log("got key");
                     SetIcon(pickUp);
-                    SetSize(crosshairSize.medium);
+                    SetSize(crosshairSize.big);
                     getKey = true;
                     getNote = false;
                     getFuel = false;
                     openDoor = false;
                     pourGenerator = false;
                     openLight = false;
-
+                    openGenSwitch = false;
                     break;
                 case "Note":
                     SetIcon(note);
-                    SetSize(crosshairSize.medium);
+                    SetSize(crosshairSize.big);
                     getKey = false;
                     getNote = true;
                     getFuel = false;
                     openDoor = false;
                     pourGenerator = false;
                     openLight = false;
-
+                    openGenSwitch = false;
                     break;
                 case "Door":
                     SetIcon(pickUp);
-                    SetSize(crosshairSize.medium);
+                    SetSize(crosshairSize.big);
                     getKey = false;
                     getNote = false;
                     getFuel = false;
                     openDoor = true;
                     pourGenerator = false;
                     openLight = false;
+                    openGenSwitch = false;
                     break;
                 case "Fuel":
                     SetIcon(pickUp);
-                    SetSize(crosshairSize.medium);
+                    SetSize(crosshairSize.big);
                     getKey = false;
                     getNote = false;
                     getFuel = true;
                     openDoor = false;
                     pourGenerator = false;
                     openLight = false;
-
+                    openGenSwitch = false;
                     break;
 
                 case "Generator":
                     SetIcon(pickUp);
-                    SetSize(crosshairSize.medium);
+                    SetSize(crosshairSize.big);
                     getKey = false;
                     getNote = false;
                     getFuel = false;
                     openDoor = false;
                     pourGenerator = true;
                     openLight = false;
-
+                    openGenSwitch = false;
                     break;
 
                 case "Light Switch":
                     
                     SetIcon(pickUp);
-                    SetSize(crosshairSize.medium);
+                    SetSize(crosshairSize.big);
                     print("switch");
                     getKey = false;
                     getNote = false;
@@ -157,25 +168,36 @@ public class Crosshair : MonoBehaviour {
                     openDoor = false;
                     pourGenerator = false;
                     openLight = true;
-
+                    openGenSwitch = false;
                     break;
-
-                default:
-                    SetIcon(crosshair);
-                    SetSize(crosshairSize.small);
+                case "GenSwitch":
+                    SetIcon(pickUp);
+                    SetSize(crosshairSize.big);
                     getKey = false;
                     getNote = false;
                     getFuel = false;
                     openDoor = false;
                     pourGenerator = false;
                     openLight = false;
+                    openGenSwitch = true;
+                    break;
+                default:
+                    SetIcon(crosshair);
+                    SetSize(new Vector2(0,0));
+                    getKey = false;
+                    getNote = false;
+                    getFuel = false;
+                    openDoor = false;
+                    pourGenerator = false;
+                    openLight = false;
+                    openGenSwitch = false;
                     break;
             }
         }
         else
         {
             SetIcon(crosshair);
-            SetSize(crosshairSize.small);
+            SetSize(new Vector2(0, 0));
             return;
         }
     }
@@ -192,16 +214,27 @@ public class Crosshair : MonoBehaviour {
                 if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen)
                 {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = false;
+                    _raycaster.Hit.collider.gameObject.GetComponent<DoorScript>().closed = true;
+                    
+                    
                 }
                 else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen == false)
                 {
+                    if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isLocked)
+                    {
+                        AudioManager.Instance.DoorUnlock();
+                    }
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 2;
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
+                    _raycaster.Hit.collider.gameObject.GetComponent<DoorScript>().closed = false;
+                    _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpenByGhost = true;
                 }
             }
             else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen == false)
             {
                 //tell player door is locked
+                AudioManager.Instance.DoorLocked();
+                StartCoroutine(prompts.Instance.NoKey());
             }
         }
         if (_raycaster.Hit.collider.name == "InCollider")
@@ -212,16 +245,25 @@ public class Crosshair : MonoBehaviour {
                 if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen)
                 {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = false;
+                    _raycaster.Hit.collider.gameObject.GetComponent<DoorScript>().closed = true;
                 }
                 else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen == false)
                 {
+                    if(_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isLocked)
+                    {
+                        Debug.Log("ul");
+                        AudioManager.Instance.DoorUnlock();
+                    }
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 1;
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
+                    _raycaster.Hit.collider.gameObject.GetComponent<DoorScript>().closed = false;
+                    _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpenByGhost = true;
                 }
             }
             else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen == false)
             {
-                //tell player door is locked
+                AudioManager.Instance.DoorLocked();
+                StartCoroutine(prompts.Instance.NoKey());
             }
 
         }
