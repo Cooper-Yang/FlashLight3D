@@ -1919,7 +1919,7 @@ GameObject:
   - component: {fileID: 54210432}
   - component: {fileID: 54210433}
   - component: {fileID: 54210434}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -2209,7 +2209,7 @@ GameObject:
   - component: {fileID: 64193890}
   - component: {fileID: 64193889}
   - component: {fileID: 64193888}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6002,7 +6002,7 @@ GameObject:
   - component: {fileID: 88391649}
   - component: {fileID: 88391648}
   - component: {fileID: 88391647}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6217,7 +6217,7 @@ GameObject:
   - component: {fileID: 98361034}
   - component: {fileID: 98361036}
   - component: {fileID: 98361035}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6298,7 +6298,7 @@ GameObject:
   - component: {fileID: 98649537}
   - component: {fileID: 98649538}
   - component: {fileID: 98649539}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -6644,7 +6644,7 @@ GameObject:
   - component: {fileID: 104477098}
   - component: {fileID: 104477099}
   - component: {fileID: 104477100}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -7049,7 +7049,7 @@ GameObject:
   - component: {fileID: 134131074}
   - component: {fileID: 134131075}
   - component: {fileID: 134131076}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -7128,7 +7128,7 @@ GameObject:
   - component: {fileID: 136494189}
   - component: {fileID: 136494191}
   - component: {fileID: 136494190}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7675,7 +7675,7 @@ GameObject:
   - component: {fileID: 178210912}
   - component: {fileID: 178210913}
   - component: {fileID: 178210914}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -7894,7 +7894,7 @@ GameObject:
   - component: {fileID: 185268551}
   - component: {fileID: 185268553}
   - component: {fileID: 185268552}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -7972,7 +7972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 188481411}
   - component: {fileID: 188481412}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8562,7 +8562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 214970233}
   - component: {fileID: 214970234}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10271,7 +10271,7 @@ GameObject:
   - component: {fileID: 227973836}
   - component: {fileID: 227973837}
   - component: {fileID: 227973838}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -10388,7 +10388,7 @@ GameObject:
   - component: {fileID: 231053920}
   - component: {fileID: 231053919}
   - component: {fileID: 231053921}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -10844,7 +10844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 252440779}
   - component: {fileID: 252440780}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11014,7 +11014,7 @@ GameObject:
   - component: {fileID: 267561691}
   - component: {fileID: 267561690}
   - component: {fileID: 267561692}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -13168,7 +13168,7 @@ GameObject:
   - component: {fileID: 289693243}
   - component: {fileID: 289693242}
   - component: {fileID: 289693241}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13327,7 +13327,7 @@ GameObject:
   - component: {fileID: 294335594}
   - component: {fileID: 294335596}
   - component: {fileID: 294335595}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13478,7 +13478,7 @@ GameObject:
   - component: {fileID: 294760292}
   - component: {fileID: 294760291}
   - component: {fileID: 294760293}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -13724,7 +13724,7 @@ GameObject:
   - component: {fileID: 301252863}
   - component: {fileID: 301252862}
   - component: {fileID: 301252861}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16436,7 +16436,7 @@ GameObject:
   - component: {fileID: 334411240}
   - component: {fileID: 334411239}
   - component: {fileID: 334411238}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16653,7 +16653,7 @@ GameObject:
   - component: {fileID: 345383859}
   - component: {fileID: 345383858}
   - component: {fileID: 345383857}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17132,7 +17132,7 @@ GameObject:
   - component: {fileID: 359343249}
   - component: {fileID: 359343251}
   - component: {fileID: 359343250}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17212,7 +17212,7 @@ GameObject:
   - component: {fileID: 362037031}
   - component: {fileID: 362037033}
   - component: {fileID: 362037032}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -17589,7 +17589,7 @@ GameObject:
   m_Component:
   - component: {fileID: 372314687}
   - component: {fileID: 372314688}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17638,7 +17638,7 @@ GameObject:
   - component: {fileID: 377715181}
   - component: {fileID: 377715180}
   - component: {fileID: 377715179}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18568,7 +18568,7 @@ GameObject:
   - component: {fileID: 414656123}
   - component: {fileID: 414656125}
   - component: {fileID: 414656124}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18860,7 +18860,7 @@ GameObject:
   - component: {fileID: 432521251}
   - component: {fileID: 432521253}
   - component: {fileID: 432521252}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19211,7 +19211,7 @@ GameObject:
   - component: {fileID: 439657275}
   - component: {fileID: 439657277}
   - component: {fileID: 439657276}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -19291,7 +19291,7 @@ GameObject:
   - component: {fileID: 444008178}
   - component: {fileID: 444008177}
   - component: {fileID: 444008176}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22858,6 +22858,7 @@ MonoBehaviour:
   ghostIdle: {fileID: 8300000, guid: 19aebb7c1abdd4b458de695ca0de9740, type: 3}
   ghostScream: {fileID: 8300000, guid: 5e3f70bc5a2324140b769099c17585a9, type: 3}
   player: {fileID: 4499135598831076}
+  torch: {fileID: 620292045}
   aSScraeam: {fileID: 467241519}
 --- !u!82 &467241518
 AudioSource:
@@ -23177,7 +23178,7 @@ GameObject:
   - component: {fileID: 467662323}
   - component: {fileID: 467662322}
   - component: {fileID: 467662324}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -23592,7 +23593,7 @@ GameObject:
   - component: {fileID: 479339919}
   - component: {fileID: 479339921}
   - component: {fileID: 479339920}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -23743,7 +23744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 490209470}
   - component: {fileID: 490209471}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23790,7 +23791,7 @@ GameObject:
   - component: {fileID: 492153078}
   - component: {fileID: 492153080}
   - component: {fileID: 492153079}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -24230,7 +24231,7 @@ GameObject:
   - component: {fileID: 505306185}
   - component: {fileID: 505306186}
   - component: {fileID: 505306187}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -24471,7 +24472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 509496140}
   - component: {fileID: 509496141}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24801,7 +24802,7 @@ GameObject:
   - component: {fileID: 531875654}
   - component: {fileID: 531875653}
   - component: {fileID: 531875652}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25156,7 +25157,7 @@ GameObject:
   - component: {fileID: 546383251}
   - component: {fileID: 546383252}
   - component: {fileID: 546383253}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -25234,7 +25235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 549399512}
   - component: {fileID: 549399513}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25652,7 +25653,7 @@ GameObject:
   - component: {fileID: 568595503}
   - component: {fileID: 568595504}
   - component: {fileID: 568595505}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -26114,7 +26115,7 @@ GameObject:
   - component: {fileID: 589811199}
   - component: {fileID: 589811201}
   - component: {fileID: 589811200}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26347,7 +26348,7 @@ GameObject:
   - component: {fileID: 600602519}
   - component: {fileID: 600602518}
   - component: {fileID: 600602520}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -26545,7 +26546,7 @@ GameObject:
   - component: {fileID: 608482574}
   - component: {fileID: 608482573}
   - component: {fileID: 608482572}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26711,7 +26712,7 @@ GameObject:
   - component: {fileID: 615795851}
   - component: {fileID: 615795850}
   - component: {fileID: 615795852}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -26884,7 +26885,7 @@ GameObject:
   - component: {fileID: 617301085}
   - component: {fileID: 617301087}
   - component: {fileID: 617301086}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -27391,7 +27392,7 @@ GameObject:
   - component: {fileID: 638120488}
   - component: {fileID: 638120489}
   - component: {fileID: 638120490}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -28019,7 +28020,7 @@ GameObject:
   - component: {fileID: 661598059}
   - component: {fileID: 661598060}
   - component: {fileID: 661598061}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -28367,7 +28368,7 @@ GameObject:
   - component: {fileID: 672306115}
   - component: {fileID: 672306114}
   - component: {fileID: 672306113}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28505,7 +28506,7 @@ GameObject:
   - component: {fileID: 676567135}
   - component: {fileID: 676567136}
   - component: {fileID: 676567137}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -28591,7 +28592,7 @@ GameObject:
   - component: {fileID: 683139904}
   - component: {fileID: 683139905}
   - component: {fileID: 683139906}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -28967,7 +28968,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702384458}
   - component: {fileID: 702384459}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29251,7 +29252,7 @@ GameObject:
   - component: {fileID: 727146173}
   - component: {fileID: 727146174}
   - component: {fileID: 727146175}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -29596,7 +29597,7 @@ GameObject:
   - component: {fileID: 740398212}
   - component: {fileID: 740398214}
   - component: {fileID: 740398213}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -31076,7 +31077,7 @@ GameObject:
   - component: {fileID: 769009753}
   - component: {fileID: 769009755}
   - component: {fileID: 769009754}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31721,7 +31722,7 @@ GameObject:
   m_Component:
   - component: {fileID: 788879866}
   - component: {fileID: 788879867}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31854,7 +31855,7 @@ GameObject:
   - component: {fileID: 797475749}
   - component: {fileID: 797475748}
   - component: {fileID: 797475747}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32105,7 +32106,7 @@ GameObject:
   - component: {fileID: 812174882}
   - component: {fileID: 812174881}
   - component: {fileID: 812174883}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -32278,7 +32279,7 @@ GameObject:
   - component: {fileID: 814711979}
   - component: {fileID: 814711981}
   - component: {fileID: 814711980}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -32460,7 +32461,7 @@ GameObject:
   - component: {fileID: 822080579}
   - component: {fileID: 822080580}
   - component: {fileID: 822080581}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -32629,7 +32630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 857834951}
   - component: {fileID: 857834952}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33556,7 +33557,7 @@ GameObject:
   m_Component:
   - component: {fileID: 894309651}
   - component: {fileID: 894309652}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33840,7 +33841,7 @@ GameObject:
   - component: {fileID: 902767804}
   - component: {fileID: 902767806}
   - component: {fileID: 902767805}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -33920,7 +33921,7 @@ GameObject:
   - component: {fileID: 904255981}
   - component: {fileID: 904255980}
   - component: {fileID: 904255982}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -34092,7 +34093,7 @@ GameObject:
   - component: {fileID: 905590175}
   - component: {fileID: 905590177}
   - component: {fileID: 905590176}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34252,7 +34253,7 @@ GameObject:
   - component: {fileID: 910271765}
   - component: {fileID: 910271764}
   - component: {fileID: 910271763}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34846,7 +34847,7 @@ GameObject:
   - component: {fileID: 930825027}
   - component: {fileID: 930825029}
   - component: {fileID: 930825028}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -35908,7 +35909,7 @@ GameObject:
   - component: {fileID: 957414279}
   - component: {fileID: 957414278}
   - component: {fileID: 957414277}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36134,7 +36135,7 @@ GameObject:
   - component: {fileID: 959910495}
   - component: {fileID: 959910497}
   - component: {fileID: 959910496}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36372,7 +36373,7 @@ GameObject:
   - component: {fileID: 970929661}
   - component: {fileID: 970929663}
   - component: {fileID: 970929662}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -36864,7 +36865,7 @@ GameObject:
   - component: {fileID: 987168432}
   - component: {fileID: 987168431}
   - component: {fileID: 987168433}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -38568,7 +38569,7 @@ GameObject:
   - component: {fileID: 1012962824}
   - component: {fileID: 1012962823}
   - component: {fileID: 1012962822}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38812,7 +38813,7 @@ GameObject:
   - component: {fileID: 1027401150}
   - component: {fileID: 1027401152}
   - component: {fileID: 1027401151}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39849,7 +39850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1064606883}
   - component: {fileID: 1064606884}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39980,7 +39981,7 @@ GameObject:
   - component: {fileID: 1073597240}
   - component: {fileID: 1073597242}
   - component: {fileID: 1073597241}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40940,7 +40941,7 @@ GameObject:
   - component: {fileID: 1112004773}
   - component: {fileID: 1112004775}
   - component: {fileID: 1112004774}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41111,7 +41112,7 @@ GameObject:
   - component: {fileID: 1112728971}
   - component: {fileID: 1112728970}
   - component: {fileID: 1112728972}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -42108,7 +42109,7 @@ GameObject:
   - component: {fileID: 1128260534}
   - component: {fileID: 1128260536}
   - component: {fileID: 1128260535}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43810,7 +43811,7 @@ GameObject:
   - component: {fileID: 1174142144}
   - component: {fileID: 1174142146}
   - component: {fileID: 1174142145}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44047,7 +44048,7 @@ GameObject:
   - component: {fileID: 1186630866}
   - component: {fileID: 1186630868}
   - component: {fileID: 1186630867}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44127,7 +44128,7 @@ GameObject:
   - component: {fileID: 1197500912}
   - component: {fileID: 1197500911}
   - component: {fileID: 1197500913}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -44983,7 +44984,7 @@ GameObject:
   - component: {fileID: 1240027050}
   - component: {fileID: 1240027052}
   - component: {fileID: 1240027051}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -45296,7 +45297,7 @@ GameObject:
   - component: {fileID: 1254296115}
   - component: {fileID: 1254296114}
   - component: {fileID: 1254296113}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46059,7 +46060,7 @@ GameObject:
   - component: {fileID: 1273701760}
   - component: {fileID: 1273701762}
   - component: {fileID: 1273701761}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -46139,7 +46140,7 @@ GameObject:
   - component: {fileID: 1285967390}
   - component: {fileID: 1285967389}
   - component: {fileID: 1285967391}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -46312,7 +46313,7 @@ GameObject:
   - component: {fileID: 1289176926}
   - component: {fileID: 1289176928}
   - component: {fileID: 1289176927}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -46391,7 +46392,7 @@ GameObject:
   - component: {fileID: 1289729731}
   - component: {fileID: 1289729733}
   - component: {fileID: 1289729732}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46726,7 +46727,7 @@ GameObject:
   - component: {fileID: 1297916058}
   - component: {fileID: 1297916060}
   - component: {fileID: 1297916059}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -46879,7 +46880,7 @@ GameObject:
   - component: {fileID: 1300769573}
   - component: {fileID: 1300769572}
   - component: {fileID: 1300769574}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -47052,7 +47053,7 @@ GameObject:
   - component: {fileID: 1305619044}
   - component: {fileID: 1305619045}
   - component: {fileID: 1305619046}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -47702,7 +47703,7 @@ GameObject:
   - component: {fileID: 1329493181}
   - component: {fileID: 1329493183}
   - component: {fileID: 1329493182}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47976,7 +47977,7 @@ GameObject:
   - component: {fileID: 1340307594}
   - component: {fileID: 1340307593}
   - component: {fileID: 1340307595}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -48238,7 +48239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1346163092}
   - component: {fileID: 1346163093}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48752,7 +48753,7 @@ GameObject:
   - component: {fileID: 1359782061}
   - component: {fileID: 1359782063}
   - component: {fileID: 1359782062}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75961,7 +75962,7 @@ GameObject:
   - component: {fileID: 1370825527}
   - component: {fileID: 1370825526}
   - component: {fileID: 1370825528}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -76854,7 +76855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1382251536}
   - component: {fileID: 1382251537}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77265,7 +77266,7 @@ GameObject:
   - component: {fileID: 1419636254}
   - component: {fileID: 1419636253}
   - component: {fileID: 1419636255}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -77740,7 +77741,7 @@ GameObject:
   - component: {fileID: 1428826005}
   - component: {fileID: 1428826007}
   - component: {fileID: 1428826006}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78820,7 +78821,7 @@ GameObject:
   - component: {fileID: 1490022180}
   - component: {fileID: 1490022182}
   - component: {fileID: 1490022181}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78980,7 +78981,7 @@ GameObject:
   - component: {fileID: 1493873070}
   - component: {fileID: 1493873072}
   - component: {fileID: 1493873071}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -79187,7 +79188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1502063089}
   - component: {fileID: 1502063090}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79650,7 +79651,7 @@ GameObject:
   - component: {fileID: 1510683156}
   - component: {fileID: 1510683158}
   - component: {fileID: 1510683157}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79748,7 +79749,7 @@ GameObject:
   - component: {fileID: 1517383052}
   - component: {fileID: 1517383054}
   - component: {fileID: 1517383053}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79846,7 +79847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1531187806}
   - component: {fileID: 1531187807}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82183,7 +82184,7 @@ GameObject:
   - component: {fileID: 1535832329}
   - component: {fileID: 1535832331}
   - component: {fileID: 1535832330}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -82360,7 +82361,7 @@ GameObject:
   - component: {fileID: 1543644463}
   - component: {fileID: 1543644462}
   - component: {fileID: 1543644464}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -82539,7 +82540,7 @@ GameObject:
   - component: {fileID: 1552481537}
   - component: {fileID: 1552481536}
   - component: {fileID: 1552481535}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83033,7 +83034,7 @@ GameObject:
   - component: {fileID: 1565565600}
   - component: {fileID: 1565565602}
   - component: {fileID: 1565565601}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83281,7 +83282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1572592011}
   - component: {fileID: 1572592012}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83530,7 +83531,7 @@ GameObject:
   - component: {fileID: 1578920333}
   - component: {fileID: 1578920335}
   - component: {fileID: 1578920334}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84735,7 +84736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1641864739}
   - component: {fileID: 1641864740}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84923,7 +84924,7 @@ GameObject:
   - component: {fileID: 1648663821}
   - component: {fileID: 1648663820}
   - component: {fileID: 1648663819}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85016,7 +85017,7 @@ GameObject:
   - component: {fileID: 1649034687}
   - component: {fileID: 1649034686}
   - component: {fileID: 1649034685}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85846,7 +85847,7 @@ GameObject:
   - component: {fileID: 1712613658}
   - component: {fileID: 1712613657}
   - component: {fileID: 1712613659}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -86019,7 +86020,7 @@ GameObject:
   - component: {fileID: 1713483250}
   - component: {fileID: 1713483252}
   - component: {fileID: 1713483251}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -86183,7 +86184,7 @@ GameObject:
   - component: {fileID: 1721858863}
   - component: {fileID: 1721858865}
   - component: {fileID: 1721858864}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86644,7 +86645,7 @@ GameObject:
   - component: {fileID: 1739514986}
   - component: {fileID: 1739514988}
   - component: {fileID: 1739514987}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86797,7 +86798,7 @@ GameObject:
   - component: {fileID: 1748403198}
   - component: {fileID: 1748403197}
   - component: {fileID: 1748403196}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87150,7 +87151,7 @@ GameObject:
   - component: {fileID: 1761130735}
   - component: {fileID: 1761130737}
   - component: {fileID: 1761130738}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -87554,7 +87555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1775352697}
   - component: {fileID: 1775352698}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88900,7 +88901,7 @@ GameObject:
   - component: {fileID: 1790381827}
   - component: {fileID: 1790381829}
   - component: {fileID: 1790381828}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89053,7 +89054,7 @@ GameObject:
   - component: {fileID: 1795491065}
   - component: {fileID: 1795491066}
   - component: {fileID: 1795491067}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -89379,7 +89380,7 @@ GameObject:
   - component: {fileID: 1811049835}
   - component: {fileID: 1811049837}
   - component: {fileID: 1811049836}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -89458,7 +89459,7 @@ GameObject:
   - component: {fileID: 1811764236}
   - component: {fileID: 1811764238}
   - component: {fileID: 1811764237}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89951,7 +89952,7 @@ GameObject:
   - component: {fileID: 1831870635}
   - component: {fileID: 1831870636}
   - component: {fileID: 1831870637}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -90030,7 +90031,7 @@ GameObject:
   - component: {fileID: 1839764767}
   - component: {fileID: 1839764769}
   - component: {fileID: 1839764768}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90176,7 +90177,7 @@ GameObject:
   - component: {fileID: 1852422262}
   - component: {fileID: 1852422264}
   - component: {fileID: 1852422263}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90520,7 +90521,7 @@ GameObject:
   - component: {fileID: 1867303544}
   - component: {fileID: 1867303546}
   - component: {fileID: 1867303545}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91558,7 +91559,7 @@ GameObject:
   - component: {fileID: 1908795704}
   - component: {fileID: 1908795703}
   - component: {fileID: 1908795702}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93734,7 +93735,7 @@ GameObject:
   - component: {fileID: 1939185611}
   - component: {fileID: 1939185613}
   - component: {fileID: 1939185612}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93959,7 +93960,7 @@ GameObject:
   - component: {fileID: 1949084867}
   - component: {fileID: 1949084869}
   - component: {fileID: 1949084868}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94038,7 +94039,7 @@ GameObject:
   - component: {fileID: 1951225403}
   - component: {fileID: 1951225405}
   - component: {fileID: 1951225404}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94196,7 +94197,7 @@ GameObject:
   - component: {fileID: 1958075393}
   - component: {fileID: 1958075395}
   - component: {fileID: 1958075394}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94276,7 +94277,7 @@ GameObject:
   - component: {fileID: 1962647380}
   - component: {fileID: 1962647379}
   - component: {fileID: 1962647378}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94636,7 +94637,7 @@ GameObject:
   - component: {fileID: 1978172266}
   - component: {fileID: 1978172268}
   - component: {fileID: 1978172267}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94789,7 +94790,7 @@ GameObject:
   - component: {fileID: 1979639198}
   - component: {fileID: 1979639197}
   - component: {fileID: 1979639196}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94961,7 +94962,7 @@ GameObject:
   - component: {fileID: 1983854530}
   - component: {fileID: 1983854532}
   - component: {fileID: 1983854531}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: OutCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -95577,7 +95578,7 @@ GameObject:
   - component: {fileID: 2001411498}
   - component: {fileID: 2001411497}
   - component: {fileID: 2001411499}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: door
   m_TagString: DoorAIDetection
   m_Icon: {fileID: 0}
@@ -96055,7 +96056,7 @@ GameObject:
   - component: {fileID: 2036675017}
   - component: {fileID: 2036675019}
   - component: {fileID: 2036675018}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97933,7 +97934,7 @@ GameObject:
   - component: {fileID: 2060959259}
   - component: {fileID: 2060959261}
   - component: {fileID: 2060959260}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99408,7 +99409,7 @@ GameObject:
   - component: {fileID: 2132743588}
   - component: {fileID: 2132743589}
   - component: {fileID: 2132743590}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -99568,7 +99569,7 @@ GameObject:
   - component: {fileID: 2136271270}
   - component: {fileID: 2136271271}
   - component: {fileID: 2136271272}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: InCollider
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -99721,7 +99722,7 @@ GameObject:
   - component: {fileID: 2137252062}
   - component: {fileID: 2137252061}
   - component: {fileID: 2137252060}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: DoorMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101410,7 +101411,7 @@ GameObject:
   - component: {fileID: 735969610533233546}
   - component: {fileID: 735969610534527914}
   - component: {fileID: 735969610535657834}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Door_01_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101428,7 +101429,7 @@ GameObject:
   - component: {fileID: 735969610533233548}
   - component: {fileID: 735969610534527916}
   - component: {fileID: 735969610535657836}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Glass_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101445,7 +101446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 735969610533233550}
   - component: {fileID: 735969610533666735}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: SM_Door_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
