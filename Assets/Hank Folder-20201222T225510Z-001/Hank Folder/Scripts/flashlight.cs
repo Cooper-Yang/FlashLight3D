@@ -9,7 +9,7 @@ public class flashlight : MonoBehaviour
     
     void Start()
     {
-        on = true;
+        on = false;
     }
 
     // Update is called once per frame
