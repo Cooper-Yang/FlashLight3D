@@ -35,16 +35,20 @@ public class AITargetScript : MonoBehaviour
 				float minDis = int.MaxValue;
 				foreach (var source in envirlightSources)
 				{
-					float dis = Vector3.Distance(source.position, ghost.transform.position);
-					if (minDis > dis)
+					if (source != null)
 					{
-						minDis = dis;
-						transform.position = new Vector3(source.position.x, 0, source.position.z);
+						float dis = Vector3.Distance(source.position, ghost.transform.position);
+						if (minDis > dis)
+						{
+							minDis = dis;
+							transform.position = new Vector3(source.position.x, 0, source.position.z);
+						}
 					}
 				}
 			}
 			else // no player light source nor environment light source, stand still
 			{
+				print("stand still");
 				transform.position = ghost.transform.position;
 			}
 		}
