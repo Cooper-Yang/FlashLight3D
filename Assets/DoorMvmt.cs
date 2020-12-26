@@ -15,6 +15,8 @@ public class DoorMvmt : MonoBehaviour
     public bool Lock2 = false; //check if it can be open by key 2
     public GameObject inventory;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,15 @@ public class DoorMvmt : MonoBehaviour
         DoorAnim.SetInteger("OpenState", doorState);
 
         canOpen = CheckDoorLock();
+
+    }
+
+    public void OpenDoorSound()
+    {
+        if (!GetComponent<AudioSource>().isPlaying)
+        {
+            GetComponent<AudioSource>().Play();
+        }
     }
 
     public bool CheckDoorLock()
@@ -39,6 +50,7 @@ public class DoorMvmt : MonoBehaviour
             {
                 if(inventory.GetComponent<inventory>().key1Carried)
                 {
+                    
                     return true;
                 }
                 else

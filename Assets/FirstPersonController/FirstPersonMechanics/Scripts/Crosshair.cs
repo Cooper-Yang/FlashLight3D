@@ -53,14 +53,17 @@ public class Crosshair : MonoBehaviour {
             if (getKey)
             {
                 _raycaster.Hit.collider.gameObject.GetComponent<keypickup>().pickedUp = true;
+                AudioManager.Instance.Keys();
             }
             else if (getNote)
             {
                 _raycaster.Hit.collider.gameObject.GetComponent<Note>().pickedUp = true;
+                AudioManager.Instance.Paper();
             }
             else if (getFuel)
             {
                 _raycaster.Hit.collider.gameObject.GetComponent<fuelcan>().pickedUp = true;
+                AudioManager.Instance.JerryCan();
             }
             else if (openDoor)
             {
@@ -69,10 +72,12 @@ public class Crosshair : MonoBehaviour {
             else if (pourGenerator)
             {
                 _raycaster.Hit.collider.gameObject.GetComponent<generator>().AddFuel();
+                
             }
             else if (openLight)
             {
                 _raycaster.Hit.collider.gameObject.GetComponent<LightSwitchScript>().SwitchLights();
+                AudioManager.Instance.LightSwitch();
             }
         }
     }
@@ -162,7 +167,7 @@ public class Crosshair : MonoBehaviour {
 
                 default:
                     SetIcon(crosshair);
-                    SetSize(crosshairSize.small);
+                    SetSize(new Vector2(0,0));
                     getKey = false;
                     getNote = false;
                     getFuel = false;
@@ -175,7 +180,7 @@ public class Crosshair : MonoBehaviour {
         else
         {
             SetIcon(crosshair);
-            SetSize(crosshairSize.small);
+            SetSize(new Vector2(0, 0));
             return;
         }
     }
@@ -192,16 +197,26 @@ public class Crosshair : MonoBehaviour {
                 if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen)
                 {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = false;
+                    _raycaster.Hit.collider.gameObject.GetComponent<DoorScript>().closed = true;
+                    
+                    
                 }
                 else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen == false)
                 {
+                    if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isLocked)
+                    {
+                        AudioManager.Instance.DoorUnlock();
+                    }
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 2;
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
+                    _raycaster.Hit.collider.gameObject.GetComponent<DoorScript>().closed = false;
+                    
                 }
             }
             else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen == false)
             {
                 //tell player door is locked
+                AudioManager.Instance.DoorLocked();
             }
         }
         if (_raycaster.Hit.collider.name == "InCollider")
@@ -212,16 +227,24 @@ public class Crosshair : MonoBehaviour {
                 if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen)
                 {
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = false;
+                    _raycaster.Hit.collider.gameObject.GetComponent<DoorScript>().closed = true;
                 }
                 else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen == false)
                 {
+                    if(_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isLocked)
+                    {
+                        Debug.Log("ul");
+                        AudioManager.Instance.DoorUnlock();
+                    }
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().doorState = 1;
                     _raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().isOpen = true;
+                    _raycaster.Hit.collider.gameObject.GetComponent<DoorScript>().closed = false;
+                    
                 }
             }
             else if (_raycaster.Hit.collider.gameObject.GetComponentInParent<DoorMvmt>().canOpen == false)
             {
-                //tell player door is locked
+                AudioManager.Instance.DoorLocked();
             }
 
         }

@@ -40,6 +40,11 @@ public class generator : MonoBehaviour
             inventory.Instance.firstGen = true;
         }
 
+        if (invFuel > 0)
+        {
+            AudioManager.Instance.OilPour();
+        }
+
         fuelAmt += invFuel;
         inventory.Instance.fuelCarried = 0;
     }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class AITargetScript : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class AITargetScript : MonoBehaviour
 	{
 		if (!gs.onDoor) // if ai is not trying to open a door, look for light sources
 		{
+			//ghost.GetComponent<AIDestinationSetter>().enabled = true;
 			if (playerLightSource != null) // if there is a player light source, then look for player
 			{
 				transform.position = new Vector3(playerLightSource.position.x, 0, playerLightSource.position.z);
