@@ -6,7 +6,7 @@ public class GeneratorSwitch : MonoBehaviour
 {
     public AudioSource t1;
     public AudioSource t2;
-    bool once=true;
+    public bool once=true;
     public void SwitchToTheEnd()
     {
         if (inventory.Instance.generatorCanWork&&once)
