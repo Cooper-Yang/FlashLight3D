@@ -11,7 +11,8 @@ public class prompts : MonoBehaviour
     public Text notEnoughFuels;
     public Text noPowers;
     public Text noKeys;
- 
+    public Text genOn;
+
 
     private static prompts _instance;
     public static prompts Instance { get { return _instance; } }
@@ -42,6 +43,7 @@ public class prompts : MonoBehaviour
         notEnoughFuels.enabled = false;
         noKeys.enabled = false;
         noPowers.enabled = false;
+        genOn.enabled = false;
     }
 
     // Update is called once per frame
@@ -101,6 +103,12 @@ public class prompts : MonoBehaviour
         noPowers.enabled = true;
         yield return new WaitForSeconds(3f);
         noPowers.enabled = false;
+    }
+    public IEnumerator GenOn()
+    {
+        genOn.enabled = true;
+        yield return new WaitForSeconds(3f);
+        genOn.enabled = false;
     }
 
 }
