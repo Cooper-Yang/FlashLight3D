@@ -47,6 +47,7 @@ public class Crosshair : MonoBehaviour {
     bool openLight;
     bool openGenSwitch;
 
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
@@ -84,6 +85,9 @@ public class Crosshair : MonoBehaviour {
             {
                 _raycaster.Hit.collider.gameObject.GetComponent<GeneratorSwitch>().SwitchToTheEnd();
             }
+
+            
+
         }
     }
 
@@ -180,6 +184,10 @@ public class Crosshair : MonoBehaviour {
                     pourGenerator = false;
                     openLight = false;
                     openGenSwitch = true;
+                    break;
+                case "ExitDoor":
+                    SetIcon(pickUp);
+                    SetSize(crosshairSize.big);
                     break;
                 default:
                     SetIcon(crosshair);
