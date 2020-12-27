@@ -19,7 +19,7 @@ public class GhostAudio : MonoBehaviour
     {
         float dist = Vector3.Distance(player.position, transform.position);
         //print(dist);
-        if (dist < 15 && canScream&&torch.GetComponent<flashlight>().on)
+        if (dist < 15 && canScream&&torch.GetComponent<flashlight>().on&&SecondDoor.Opened)
         {
             Debug.Log("scream!");
             aSScraeam.Play();
