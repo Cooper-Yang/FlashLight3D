@@ -14,6 +14,8 @@ public class generator : MonoBehaviour
 
     public Text genFuel;
 
+
+
     void Start()
     {
         fuelCap = 5;
@@ -53,10 +55,17 @@ public class generator : MonoBehaviour
             AudioManager.Instance.OilPour();
             
         }
-        else
-        {
-            StartCoroutine(prompts.Instance.NoFuel());  
-        }
+       
+            else if (!canStart)
+            {
+                StartCoroutine(prompts.Instance.GenOn());
+            }
+            else
+            {
+                StartCoroutine(prompts.Instance.NoFuel());
+            }
+               
+      
 
         fuelAmt += invFuel;
         inventory.Instance.fuelCarried = 0;
