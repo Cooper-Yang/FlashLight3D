@@ -10972,7 +10972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4413592946224180, guid: e742695cdfd6e214eba330661a8749fd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.34
+      value: 7.34
       objectReference: {fileID: 0}
     - target: {fileID: 4413592946224180, guid: e742695cdfd6e214eba330661a8749fd, type: 3}
       propertyPath: m_LocalRotation.x
@@ -14501,7 +14501,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17206
+  m_Name: pb_Mesh916172
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17917,7 +17917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4413592946224180, guid: e742695cdfd6e214eba330661a8749fd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.73
+      value: -23.32
       objectReference: {fileID: 0}
     - target: {fileID: 4413592946224180, guid: e742695cdfd6e214eba330661a8749fd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19630,7 +19630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4413592946224180, guid: e742695cdfd6e214eba330661a8749fd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.3399973
+      value: 7.3399973
       objectReference: {fileID: 0}
     - target: {fileID: 4413592946224180, guid: e742695cdfd6e214eba330661a8749fd, type: 3}
       propertyPath: m_LocalRotation.x
@@ -26283,7 +26283,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Hello my name is Hank you are going to die hehehehehe...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 3265648bc2c4de34bb440f65159e4fbb, type: 2}
   m_sharedMaterial: {fileID: 2045493592150795851, guid: 3265648bc2c4de34bb440f65159e4fbb,
     type: 2}
   m_fontSharedMaterials: []
@@ -26348,7 +26348,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &561801112
@@ -32738,7 +32738,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4413592946224180, guid: e742695cdfd6e214eba330661a8749fd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.3399973
+      value: 7.3399973
       objectReference: {fileID: 0}
     - target: {fileID: 4413592946224180, guid: e742695cdfd6e214eba330661a8749fd, type: 3}
       propertyPath: m_LocalRotation.x
@@ -43390,7 +43390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4413592946224180, guid: e742695cdfd6e214eba330661a8749fd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 37.99
+      value: 38.55
       objectReference: {fileID: 0}
     - target: {fileID: 4413592946224180, guid: e742695cdfd6e214eba330661a8749fd, type: 3}
       propertyPath: m_LocalRotation.x
@@ -44413,7 +44413,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17802
+  m_Name: pb_Mesh916768
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -49252,7 +49252,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314249109}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -9.05, y: -2.18, z: 2.4}
+  m_LocalPosition: {x: -9.05, y: -2.18, z: 2.46}
   m_LocalScale: {x: 2.079, y: 1.6632, z: 3.2091444}
   m_Children:
   - {fileID: 1112728969}
@@ -91620,7 +91620,7 @@ Transform:
   m_GameObject: {fileID: 1776981923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.5000496, y: -7.5, z: -4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0.9897455}
   m_Children: []
   m_Father: {fileID: 257160726}
   m_RootOrder: 16
@@ -104932,7 +104932,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Press F to interact
+  m_Text: "Press \u2018F\u2019 to interact"
 --- !u!1 &2639770793234681714
 GameObject:
   m_ObjectHideFlags: 0
