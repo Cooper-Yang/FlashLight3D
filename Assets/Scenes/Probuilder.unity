@@ -26711,14 +26711,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endCam: {fileID: 619422232}
   mainCam: {fileID: 20528068151174508}
-  doorChild: {fileID: 844017129}
-  audioChild: {fileID: 1472638139}
   rollDoor: {fileID: 1104541852}
   title: {fileID: 953930643}
   counter: 0
-  openSound: {fileID: 8300000, guid: a091e7e1aa5a91247a04c0821db49b99, type: 3}
-  closeSound: {fileID: 8300000, guid: 195492642f297964cb8f2d56c7a43c25, type: 3}
-  inTrigger: 0
 --- !u!65 &521398069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35835,12 +35830,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1267696135}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &844017129 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100004, guid: 7d4317de9c84b3e469f81c3ce2ab95eb,
-    type: 3}
-  m_PrefabInstance: {fileID: 2116667089}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &851180364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38989,7 +38978,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 10
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -85533,12 +85522,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1472638139 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 7d4317de9c84b3e469f81c3ce2ab95eb,
-    type: 3}
-  m_PrefabInstance: {fileID: 2116667089}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1473604589
 PrefabInstance:
   m_ObjectHideFlags: 0
