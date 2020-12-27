@@ -75,8 +75,10 @@ public class BasicDoor : MonoBehaviour {
                 else
                     //insert cannot open door script
                     Debug.Log("cannot go to exit");
-            }
-            
-        }
+					StartCoroutine(prompts.Instance.NoPower());
+
+			}
+
+		}
 	}
 }
