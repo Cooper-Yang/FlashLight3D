@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.7379107, g: 0.7379107, b: 0.7379107, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0.1
+  m_AmbientIntensity: 0.61
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -11108,8 +11108,8 @@ MonoBehaviour:
   isOpen: 0
   canOpen: 0
   doorState: 0
-  isLocked: 0
-  Lock1: 0
+  isLocked: 1
+  Lock1: 1
   Lock2: 0
   inventory: {fileID: 620292045}
   canOpenByGhost: 0
@@ -28002,9 +28002,9 @@ MonoBehaviour:
   isOpen: 0
   canOpen: 0
   doorState: 0
-  isLocked: 0
+  isLocked: 1
   Lock1: 0
-  Lock2: 0
+  Lock2: 1
   inventory: {fileID: 620292045}
   canOpenByGhost: 0
 --- !u!95 &615795851
@@ -34699,9 +34699,9 @@ MonoBehaviour:
   isOpen: 0
   canOpen: 0
   doorState: 0
-  isLocked: 0
+  isLocked: 1
   Lock1: 0
-  Lock2: 0
+  Lock2: 1
   inventory: {fileID: 620292045}
   canOpenByGhost: 0
 --- !u!95 &858528705
@@ -47577,9 +47577,9 @@ MonoBehaviour:
   isOpen: 0
   canOpen: 0
   doorState: 0
-  isLocked: 1
+  isLocked: 0
   Lock1: 0
-  Lock2: 1
+  Lock2: 0
   inventory: {fileID: 620292045}
   canOpenByGhost: 0
 --- !u!95 &1197500912
@@ -47802,7 +47802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211233159}
   m_LocalRotation: {x: -0.000000021653252, y: 1, z: -0.000000011559672, w: 0}
-  m_LocalPosition: {x: -0.0051239408, y: 1.554053, z: -0.1291227}
+  m_LocalPosition: {x: -0.005, y: 1.294, z: -0.129}
   m_LocalScale: {x: 0.44161454, y: 0.53371847, z: 0.6407775}
   m_Children: []
   m_Father: {fileID: 1788417073}
@@ -50873,9 +50873,9 @@ MonoBehaviour:
   isOpen: 0
   canOpen: 0
   doorState: 0
-  isLocked: 0
+  isLocked: 1
   Lock1: 0
-  Lock2: 0
+  Lock2: 1
   inventory: {fileID: 620292045}
   canOpenByGhost: 0
 --- !u!95 &1300769573
@@ -90615,7 +90615,7 @@ MonoBehaviour:
   isOpen: 0
   canOpen: 0
   doorState: 0
-  isLocked: 0
+  isLocked: 1
   Lock1: 0
   Lock2: 1
   inventory: {fileID: 620292045}
@@ -91380,7 +91380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4001743295363404, guid: 1adf18cb38d2dd9459390b1784a760e3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.42
+      value: 3.84
       objectReference: {fileID: 0}
     - target: {fileID: 4001743295363404, guid: 1adf18cb38d2dd9459390b1784a760e3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -93769,7 +93769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   t1: {fileID: 1772268082}
   t2: {fileID: 1063887169}
-  once: 1
+  once: 0
 --- !u!1 &1788417072
 GameObject:
   m_ObjectHideFlags: 0
@@ -104887,11 +104887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7d4317de9c84b3e469f81c3ce2ab95eb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.15
+      value: 4.52
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7d4317de9c84b3e469f81c3ce2ab95eb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7164292
+      value: -1.64
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7d4317de9c84b3e469f81c3ce2ab95eb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -104931,7 +104931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7d4317de9c84b3e469f81c3ce2ab95eb, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2541
+      value: 1.3790083
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 7d4317de9c84b3e469f81c3ce2ab95eb, type: 3}
       propertyPath: m_LocalScale.x
