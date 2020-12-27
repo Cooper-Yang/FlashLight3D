@@ -15,9 +15,11 @@ public class BasicDoor : MonoBehaviour {
 	public AudioClip openSound; //The door opening sound effect (3D sound.)
 	public AudioClip closeSound; //The door closing sound effect (3D sound.)
 	
-	private bool inTrigger = false; //Bool to check if CharacterController is in the trigger.
+	public bool inTrigger = false; //Bool to check if CharacterController is in the trigger.
 	private bool doorOpen = false; //Bool used to check the state of the door, if it's open or not.
-	
+
+    public GameObject Generator;
+
 	//Door opening and closing function. Can be called upon from other scripts.
 	public void doorOpenClose() {
 		//Check so that we're not playing an animation already.
@@ -45,23 +47,36 @@ public class BasicDoor : MonoBehaviour {
 	//The rest is for the interaction with the door. This can be removed or altered if you'd like to control the doors in a different way.
 	//Set the inTrigger to true when CharacterController is intersecting, which in turn means routine in Update will check for button press (interaction.)
 	void OnTriggerEnter(Collider collider) {
-		if (collider.GetComponent<CharacterController>())
+		if (collider.gameObject.tag == "Player")
 			inTrigger = true;
 	}
 	//Set the inTrigger to false when CharacterController is out of trigger, which in turn means routine in Update will NOT check for button press.
 	void OnTriggerExit(Collider collider) {
-		if (collider.GetComponent<CharacterController>())
+		if (collider.gameObject.tag == "Player")
 			inTrigger = false;
 	}
 	
 	void Update() {
-		//Check the inTrigger bool, to see if CharacterController is in the trigger and thus can interact with the door.
-		if (inTrigger == true) {
-			//If inTrigger is true, check for button press to interact with door.
-			//For this sample behaviour, we're checking for Fire2, which defaults to the right mouse button.
-			if (Input.GetButtonDown("Fire2")) {
-				doorOpenClose();
-			}
-		}
+        //Check the inTrigger bool, to see if CharacterController is in the trigger and thus can interact with the door.
+
+        
+        if (inTrigger == true)
+        {
+
+            //If inTrigger is true, check for button press to interact with door.
+            //For this sample behaviour, we're checking for Fire2, which defaults to the right mouse button.
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+
+                if (Generator.GetComponent<GeneratorSwitch>().once == false)
+                {
+                    doorOpenClose();
+                }
+                else
+                    //insert cannot open door script
+                    Debug.Log("cannot go to exit");
+            }
+            
+        }
 	}
 }
