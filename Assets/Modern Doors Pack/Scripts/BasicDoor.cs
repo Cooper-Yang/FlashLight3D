@@ -72,11 +72,11 @@ public class BasicDoor : MonoBehaviour {
                 {
                     doorOpenClose();
                 }
-                else
+                else if (Generator.GetComponent<GeneratorSwitch>().once)
+                {
                     //insert cannot open door script
-                    Debug.Log("cannot go to exit");
-					StartCoroutine(prompts.Instance.NoPower());
-
+                    StartCoroutine(prompts.Instance.NoPower());
+                }
 			}
 
 		}
