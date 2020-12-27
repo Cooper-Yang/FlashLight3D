@@ -6,19 +6,26 @@ public class GeneratorSwitch : MonoBehaviour
 {
     public AudioSource t1;
     public AudioSource t2;
-    public Light exitlight;
-    bool once=true;
+    public bool once;
+   
+
+    public void Start()
+    {
+      
+        once = true;
+    }
     public void SwitchToTheEnd()
     {
         if (inventory.Instance.generatorCanWork&&once)
         {
-            exitlight.gameObject.SetActive(true);
             AudioManager.Instance.GeneratorSwitch();
             t1.PlayDelayed(.5f);
             t2.PlayDelayed(1f);
             once = false;
+           
         }
-        else
+       
+        else 
         {
             StartCoroutine(prompts.Instance.NotEnoughFuel());
         }

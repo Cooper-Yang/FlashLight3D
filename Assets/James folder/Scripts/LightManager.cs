@@ -6,6 +6,7 @@ public class LightManager : MonoBehaviour
 {
     public static LightManager me;
     public List<Transform> lightTransforms;
+	public float lightDuration = 10;
 
 	private void Awake()
 	{

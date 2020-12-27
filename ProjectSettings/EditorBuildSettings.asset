@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Alex/TestLab.unity
     guid: d2c3e15efa76e1e42b675db269072a90
+  - enabled: 1
+    path: Assets/EndSceneCoop.unity
+    guid: b05d8bf3974d9f849a096aa92c7ff1b5
   m_configObjects: {}
