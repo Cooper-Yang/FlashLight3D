@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.7379107, g: 0.7379107, b: 0.7379107, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1.32
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -81802,6 +81802,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: -7876180026482762211, guid: ec1a4e530a5c9df47a982340e7eadb5e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8c4737b671ab0b44dad5b3084ce030e9, type: 2}
     - target: {fileID: 919132149155446097, guid: ec1a4e530a5c9df47a982340e7eadb5e,
         type: 3}
       propertyPath: m_Name
@@ -93690,6 +93695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   t1: {fileID: 1772268082}
   t2: {fileID: 1063887169}
+  once: 1
 --- !u!1 &1788417072
 GameObject:
   m_ObjectHideFlags: 0
@@ -104800,6 +104806,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.03878236
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7d4317de9c84b3e469f81c3ce2ab95eb, type: 3}
+      propertyPath: Generator
+      value: 
+      objectReference: {fileID: 1777993762}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d4317de9c84b3e469f81c3ce2ab95eb, type: 3}
 --- !u!1 &2119511525 stripped
