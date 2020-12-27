@@ -105,7 +105,7 @@ public class FPMovementController : MonoBehaviour
         moveDirection = (horizontalMovement * transform.right + verticalMovement * transform.forward).normalized;
 
         //Toggle run & jump
-        IsRunning = Input.GetKey(KeyCode.LeftShift);
+        IsRunning = false;//Input.GetKey(KeyCode.LeftShift);
 
         if (!prevGrounded && IsGrounded())
         {

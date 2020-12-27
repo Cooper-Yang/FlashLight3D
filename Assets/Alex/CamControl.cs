@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class CamControl : MonoBehaviour
 {
+    public GameObject UICanvas;
+    public GameObject audiomanager;
     public Camera deathCam;//new cam called deeathcam
     public Camera mainCam;//player cam
     public bool isDead;//dead bool
@@ -74,6 +76,8 @@ public class CamControl : MonoBehaviour
             }
             if(black.GetComponent<Image>().color.a >= 1)
             {
+                audiomanager.SetActive(false);
+                UICanvas.SetActive(false);
                 dead.gameObject.SetActive(true);
                 dead.text = "You died.\nMaybe...use the torch wisely...\nPress ‘R’ to start the next samsara.";
                 if (Input.GetKeyDown(KeyCode.R))
