@@ -27638,7 +27638,7 @@ MonoBehaviour:
   isOpen: 0
   canOpen: 0
   doorState: 0
-  isLocked: 0
+  isLocked: 1
   Lock1: 0
   Lock2: 1
   inventory: {fileID: 620292045}
@@ -47577,7 +47577,7 @@ MonoBehaviour:
   isOpen: 0
   canOpen: 0
   doorState: 0
-  isLocked: 0
+  isLocked: 1
   Lock1: 0
   Lock2: 1
   inventory: {fileID: 620292045}
@@ -81543,7 +81543,7 @@ MonoBehaviour:
   isOpen: 0
   canOpen: 0
   doorState: 0
-  isLocked: 0
+  isLocked: 1
   Lock1: 0
   Lock2: 1
   inventory: {fileID: 620292045}
@@ -86992,7 +86992,7 @@ MonoBehaviour:
   isOpen: 0
   canOpen: 0
   doorState: 0
-  isLocked: 0
+  isLocked: 1
   Lock1: 0
   Lock2: 1
   inventory: {fileID: 620292045}
@@ -92090,7 +92090,7 @@ MonoBehaviour:
   isOpen: 0
   canOpen: 0
   doorState: 0
-  isLocked: 0
+  isLocked: 1
   Lock1: 1
   Lock2: 0
   inventory: {fileID: 620292045}
