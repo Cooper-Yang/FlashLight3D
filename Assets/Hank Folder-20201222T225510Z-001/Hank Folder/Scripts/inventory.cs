@@ -20,6 +20,18 @@ public class inventory : MonoBehaviour
     public GameObject paper1;
     public bool paper2Carried;
     public GameObject paper2;
+    public bool paper3Carried;
+    public GameObject paper3;
+    public bool paper4Carried;
+    public GameObject paper4;
+    public bool paper5Carried;
+    public GameObject paper5;
+    public bool paper6Carried;
+    public GameObject paper6;
+    public bool paper7Carried;
+    public GameObject paper7;
+    public bool paper8Carried;
+    public GameObject paper8;
 
     public GameObject fPController;
     public GameObject crosshair;
@@ -53,6 +65,13 @@ public class inventory : MonoBehaviour
         key1Carried = false;
         key2Carried = false;
         paper1Carried = false;
+        paper2Carried = false;
+        paper3Carried = false;
+        paper4Carried = false;
+        paper5Carried = false;
+        paper6Carried = false;
+        paper7Carried = false;
+        paper8Carried = false;
         firstPickFuel = false;
         firstGen = false;
     }
@@ -106,6 +125,60 @@ public class inventory : MonoBehaviour
         else if (paper2Carried == false)
         {
             paper2.SetActive(false);
+        }
+
+        if (paper3Carried == true)
+        {
+            paper3.SetActive(true);
+        }
+        else if (paper3Carried == false)
+        {
+            paper3.SetActive(false);
+        }
+
+        if (paper4Carried == true)
+        {
+            paper4.SetActive(true);
+        }
+        else if (paper4Carried == false)
+        {
+            paper4.SetActive(false);
+        }
+
+        if (paper5Carried == true)
+        {
+            paper5.SetActive(true);
+        }
+        else if (paper5Carried == false)
+        {
+            paper5.SetActive(false);
+        }
+
+        if (paper6Carried == true)
+        {
+            paper6.SetActive(true);
+        }
+        else if (paper6Carried == false)
+        {
+            paper6.SetActive(false);
+        }
+
+        if (paper7Carried == true)
+        {
+            paper7.SetActive(true);
+        }
+        else if (paper7Carried == false)
+        {
+            paper7.SetActive(false);
+        }
+
+        if (paper8Carried == true)
+        {
+            paper8.SetActive(true);
+        }
+        else if (paper8Carried == false)
+        {
+            paper8.SetActive(false);
         }
 
 
