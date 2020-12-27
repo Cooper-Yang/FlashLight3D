@@ -6,6 +6,7 @@ public class GeneratorSwitch : MonoBehaviour
 {
     public AudioSource t1;
     public AudioSource t2;
+    public GameObject lights;
     public bool once;
    
 
@@ -22,7 +23,7 @@ public class GeneratorSwitch : MonoBehaviour
             t1.PlayDelayed(.5f);
             t2.PlayDelayed(1f);
             once = false;
-           
+            lights.SetActive(true);
         }
        
         else 
