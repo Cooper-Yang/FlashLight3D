@@ -19428,7 +19428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1630106402880992, guid: 753957b58279dae40a438692b4153cde, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1630106402880992, guid: 753957b58279dae40a438692b4153cde, type: 3}
       propertyPath: m_Layer
@@ -36626,6 +36626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightTransforms: []
+  lightDuration: 10
 --- !u!4 &945229881
 Transform:
   m_ObjectHideFlags: 0
