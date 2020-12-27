@@ -40,10 +40,6 @@ public class BasicDoor : MonoBehaviour {
 				doorOpen = false;
 			}
 		}
-        else
-        {
-			doorChild.GetComponent<Animation>().Stop();
-        }
 	}
 	
 	
